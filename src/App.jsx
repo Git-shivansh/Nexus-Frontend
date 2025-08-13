@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Explore from './components/Explore';
-import Comingsoon from './components/comingsoon';
+import Comingsoon from './components/ComingSoon';
 import ExamVault from './components/ExamVault';
 import Login from './components/Login';
 import bg from './assets/bg.png';
