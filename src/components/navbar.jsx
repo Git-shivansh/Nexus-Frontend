@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom"; // removed useNavigate
-import DropdownIcon from "../assets/dropdown.svg";
 
 const Navbar = ({ userInitials, userName, onLogout, isLoggedIn, onLoginClick }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +38,7 @@ const Navbar = ({ userInitials, userName, onLogout, isLoggedIn, onLoginClick }) 
           <button className="font-inter hover:text-orange-500 flex items-center space-x-2 ">
             <span>Feedback</span>
             <img
-              src={DropdownIcon}
+              src="/dropDown.svg"
               alt="Dropdown"
               className="w-3 h-3 transition-transform duration-200 group-hover:rotate-180 relative top-[1px]"
             />
