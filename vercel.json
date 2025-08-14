@@ -1,0 +1,32 @@
+{
+  "rewrites": [
+    {
+      "source": "/assets/:match*",
+      "destination": "/assets/:match*"
+    },
+    {
+      "source": "/static/:match*",
+      "destination": "/static/:match*"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/favicon.ico"
+    },
+    {
+      "source": "/manifest.json",
+      "destination": "/manifest.json"
+    },
+    {
+      "source": "/service-worker.js",
+      "destination": "/service-worker.js"
+    },
+    {
+      "source": "/:file(js|css|png|jpg|jpeg|gif|svg|webp|ico)",
+      "destination": "/:file"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
