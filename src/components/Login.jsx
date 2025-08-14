@@ -259,7 +259,7 @@ const Login = ({ onLogin, onClose }) => {
               <img 
                 src={showPassword ? "/eye-close.svg" : "/eye-open.svg"} 
                 alt={showPassword ? "Hide password" : "Show password"}
-                className="w-4 h-4 sm:w-5 sm:h-5"
+                className="w-4 h-4 sm:w-5 sm:h-5 opacity-50"
               />
             </button>
             {errors.password && (
@@ -301,7 +301,7 @@ const Login = ({ onLogin, onClose }) => {
                 <img 
                   src={showConfirmPassword ? "/eye-close.svg" : "/eye-open.svg"} 
                   alt={showConfirmPassword ? "Hide password" : "Show password"}
-                  className="w-4 h-4 sm:w-5 sm:h-5"
+                  className="w-4 h-4 sm:w-5 sm:h-5 opacity-50"
                 />
               </button>
               {errors.confirmPassword && (
