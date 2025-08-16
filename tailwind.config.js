@@ -11,8 +11,8 @@ export default {
   lato: ['Lato', 'sans-serif'],
       },
       colors: {
-        'brand-background': '#F7F0E8',
-        'lorange-background': '#F4DAC4',
+        'brand-background': '#ffffffff',
+        'lorange-background': '#bbbbbbff',
       },
     },
   },

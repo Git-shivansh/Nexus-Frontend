@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
-import Explore from './components/Explore';
 import Comingsoon from './components/ComingSoon';
 import ExamVault from './components/ExamVault';
 import Login from './components/Login';
-import bg from './assets/bg.png';
 
 // Layout wrapper component to handle conditional styling
 const Layout = ({ children, user, showLogin, handleLogout, handleLoginClick, onLogin, setShowLogin }) => {
@@ -15,10 +13,7 @@ const Layout = ({ children, user, showLogin, handleLogout, handleLoginClick, onL
 
   return (
     <div
-      className={`bg-brand-background min-h-screen font-lato ${
-        isHomePage ? 'bg-right-top bg-no-repeat' : ''
-      }`}
-      style={isHomePage ? { backgroundImage: `url(${bg})` } : undefined}
+      className= "bg-brand-background"
     >
       <Navbar 
         userInitials={user?.initials}
@@ -63,9 +58,8 @@ function App() {
   const HomePage = () => (
     <>
       <main className="container mx-auto py-8 md:px-10 px-4">
-        <div className="space-y-4">
+        <div className="space-y-4">          
           <Hero />
-          <Explore />
         </div>
       </main>
       <div className="mx-12 mt-10">
