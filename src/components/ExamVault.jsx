@@ -58,13 +58,15 @@ function FileDropZone({ onFileAccepted }) {
 
 const ExamVault = () => {
   const [showSemesterDropdown, setShowSemesterDropdown] = useState(false);
-  const [showYearDropdown, setShowYearDropdown] = useState(false);
+  const [showYearDropdown, setShowYearDropdown] = useState(false); // page-level year dropdown
+  const [showUploadYearDropdown, setShowUploadYearDropdown] = useState(false); // upload form year dropdown
   const [showBranchDropdown, setShowBranchDropdown] = useState(false);
   const [showTypeDropdown, setShowTypeDropdown] = useState(false);
 
   // Refs for dropdown containers
   const semesterDropdownRef = React.useRef(null);
-  const yearDropdownRef = React.useRef(null);
+  const yearDropdownRef = React.useRef(null); // page-level year dropdown ref
+  const uploadYearDropdownRef = React.useRef(null); // upload form year dropdown ref
   const branchDropdownRef = React.useRef(null);
   const typeDropdownRef = React.useRef(null);
   const [selectedSemester, setSelectedSemester] = useState('I');
@@ -94,6 +96,9 @@ const ExamVault = () => {
       if (showYearDropdown && yearDropdownRef.current && !yearDropdownRef.current.contains(event.target)) {
         setShowYearDropdown(false);
       }
+      if (showUploadYearDropdown && uploadYearDropdownRef.current && !uploadYearDropdownRef.current.contains(event.target)) {
+        setShowUploadYearDropdown(false);
+      }
       if (showBranchDropdown && branchDropdownRef.current && !branchDropdownRef.current.contains(event.target)) {
         setShowBranchDropdown(false);
       }
@@ -105,7 +110,7 @@ const ExamVault = () => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [showSemesterDropdown, showYearDropdown, showBranchDropdown, showTypeDropdown]);
+  }, [showSemesterDropdown, showYearDropdown, showUploadYearDropdown, showBranchDropdown, showTypeDropdown]);
 
   // Fetch exam papers from backend
   const fetchExamPapers = async () => {
@@ -299,11 +304,11 @@ const ExamVault = () => {
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-600 mb-1">Year</label>
-                    <div className="relative" ref={yearDropdownRef}>
+                    <div className="relative" ref={uploadYearDropdownRef}>
                       <button
                         type="button"
                         className="w-full flex items-center justify-between rounded-md border border-gray-200 px-3 py-1 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-orange-100 focus:border-orange-400 mb-2 transition-colors duration-150 hover:border-orange-300 hover:bg-orange-50/30"
-                        onClick={() => setShowYearDropdown((prev) => !prev)}
+                        onClick={() => setShowUploadYearDropdown((prev) => !prev)}
                         tabIndex={0}
                       >
                         <span>{uploadForm.year}</span>
@@ -311,7 +316,7 @@ const ExamVault = () => {
                            <img src="/down.svg" alt="Dropdown arrow" className="w-2 h-2 text-gray-200" />
                         </span>
                       </button>
-                      {showYearDropdown && (
+                      {showUploadYearDropdown && (
                         <div className="absolute left-0 right-0 z-10 bg-white border border-gray-200 rounded-md shadow-lg">
                           {["2023","2024","2025"].map((year) => (
                             <button
@@ -320,7 +325,7 @@ const ExamVault = () => {
                               className={`w-full text-left px-3 text-sm hover:bg-orange-100 rounded-md transition-colors ${uploadForm.year === year ? "bg-orange-50 font-semibold text-orange-700" : "text-gray-700"}`}
                               onClick={() => {
                                 setUploadForm({ ...uploadForm, year });
-                                setShowYearDropdown(false);
+                                setShowUploadYearDropdown(false);
                               }}
                             >
                               {year}

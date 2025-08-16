@@ -11,12 +11,12 @@ const Navbar = ({ userInitials, userName, onLogout, isLoggedIn, onLoginClick }) 
   };
 
   return (
-    <nav className=" font-inter flex items-center justify-between px-16 py-3 border-b-2 bg-white shadow">
+  <nav className=" font-lato flex items-center justify-between px-16 py-3 border-b-2 bg-white shadow">
       {/* Logo -> link to Home */}
       <Link to="/" aria-label="Go to Home" className="flex items-center space-x-2 cursor-pointer">
         <img src="/Logo.svg" alt="IIITBH Logo" className="h-6 w-6" />
-        <span className="text-xl font-bold text-orange-600">IIITBH</span>
-        <span className="text-xl font-bold">Nexus</span>
+        <span className="text-2xl font-bold text-orange-600">PYQ</span>
+        <span className="text-2xl font-bold">Hub</span>
       </Link>
 
       {/* Desktop Menu */}
@@ -35,7 +35,7 @@ const Navbar = ({ userInitials, userName, onLogout, isLoggedIn, onLoginClick }) 
 
         {/* Feedback */}
         <div className="relative group">
-          <button className="font-inter hover:text-orange-500 flex items-center space-x-2 ">
+          <button className="font-lato hover:text-orange-500 flex items-center space-x-2 ">
             <span>Feedback</span>
             <img
               src="/dropDown.svg"

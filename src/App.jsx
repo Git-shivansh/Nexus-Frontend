@@ -15,7 +15,7 @@ const Layout = ({ children, user, showLogin, handleLogout, handleLoginClick, onL
 
   return (
     <div
-      className={`bg-brand-background min-h-screen font-inter ${
+      className={`bg-brand-background min-h-screen font-lato ${
         isHomePage ? 'bg-right-top bg-no-repeat' : ''
       }`}
       style={isHomePage ? { backgroundImage: `url(${bg})` } : undefined}

@@ -7,7 +7,8 @@ export default {
    theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+  inter: ['Inter', 'ui-sans-serif', 'system-ui'],
+  lato: ['Lato', 'sans-serif'],
       },
       colors: {
         'brand-background': '#F7F0E8',
