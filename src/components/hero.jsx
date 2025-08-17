@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import doubleArrowIcon from '../assets/doublearrow.svg'
+import { Meteors } from "@/components/magicui/meteors";
 
 const Hero = () => {
   return (
