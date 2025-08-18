@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 
-const CANVAS_WIDTH = 600;
+const CANVAS_WIDTH = 500;
 const CANVAS_HEIGHT = 300;
 const SHIP_WIDTH = 40;
 const SHIP_HEIGHT = 30;

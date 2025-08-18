@@ -12,7 +12,7 @@ function ComingSoon({ centerImage, rightImage }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-center items-stretch gap-6">
           {/* Right compact card */}
-          <article className="bg-zinc-900 text-white rounded-3xl p-6 md:p-8 flex flex-col justify-between md:w-1/3 shadow-sm ring-1 ring-zinc-800 flex-grow">
+          <article className="bg-zinc-900 text-white rounded-3xl p-5 md:p-6 flex flex-col justify-between md:w-1/3 shadow-sm ring-1 ring-zinc-800 flex-grow">
             <div className="flex-shrink-0">
               <h3 className="font-normal text-lg md:text-xl leading-tight tracking-tight">
                 More Features are on its way
@@ -64,8 +64,7 @@ function ComingSoon({ centerImage, rightImage }) {
             <div className="w-full flex items-center justify-center py-4">
               <div className="w-full flex items-center justify-center">
                 <div
-                  className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg aspect-[5/3] relative rounded-lg overflow-hidden"
-                  style={{ boxShadow: "inset 0 0 16px 4px rgb(24 24 27)" }}
+                  className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg relative rounded-lg overflow-hidden"                 
                 >
                   <Game />
                 </div>
