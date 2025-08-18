@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/Animation.json";
-import Game from "./game";
+import Game from "./Game";
 
 function ComingSoon({ centerImage, rightImage }) {
   const right = rightImage || animationData;
