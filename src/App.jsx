@@ -76,7 +76,7 @@ function App() {
           <Hero />
         </div>
       </main>
-      <div className="mx-12 mt-10">
+      <div className="m-10">
         <Comingsoon />
       </div>
     </>

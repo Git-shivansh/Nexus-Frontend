@@ -1,20 +1,20 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 
-const CANVAS_WIDTH  = 600;
+const CANVAS_WIDTH = 600;
 const CANVAS_HEIGHT = 300;
-const SHIP_WIDTH    = 40;
-const SHIP_HEIGHT   = 30;
-const LASER_WIDTH   = 8;
-const LASER_HEIGHT  = 4;
-const OB_WIDTH      = 30;
-const OB_HEIGHT     = 24;
-const GAME_SPEED    = 2.5;
-const LASER_SPEED   = 6;
-const SPAWN_EVERY   = 90;
-const KEY_UP        = ['ArrowUp', 'w', 'W'];
-const KEY_DOWN      = ['ArrowDown', 's', 'S'];
-const KEY_SHOOT     = [' '];
-const NUM_STARS     = 80;
+const SHIP_WIDTH = 40;
+const SHIP_HEIGHT = 30;
+const LASER_WIDTH = 8;
+const LASER_HEIGHT = 4;
+const OB_WIDTH = 30;
+const OB_HEIGHT = 24;
+const GAME_SPEED = 2.5;
+const LASER_SPEED = 6;
+const SPAWN_EVERY = 90;
+const KEY_UP = ['ArrowUp', 'w', 'W'];
+const KEY_DOWN = ['ArrowDown', 's', 'S'];
+const KEY_SHOOT = [' '];
+const NUM_STARS = 80;
 
 // Axis-aligned bounding box collision
 function rectsOverlap(a, b) {
@@ -27,42 +27,41 @@ function rectsOverlap(a, b) {
 }
 
 export default function SpaceRunner() {
-  const canvasRef       = useRef(null);
-  const frameRef        = useRef();
+  const canvasRef = useRef(null);
+  const frameRef = useRef();
   const bufferCanvasRef = useRef(null);
 
   // Skins: images
-  const shipImg     = useRef(null);
+  const shipImg = useRef(null);
   const obstacleImg = useRef(null);
-  const laserImg    = useRef(null);
+  const laserImg = useRef(null);
 
   // Game state
-  const ship   = useRef({ x: 50, y: CANVAS_HEIGHT / 2 - SHIP_HEIGHT / 2 });
+  const ship = useRef({ x: 50, y: CANVAS_HEIGHT / 2 - SHIP_HEIGHT / 2 });
   const lasers = useRef([]);
-  const obsts  = useRef([]);
-  const keys   = useRef(new Set());
-  const frame  = useRef(0);
-  const score  = useRef(0);
+  const obsts = useRef([]);
+  const keys = useRef(new Set());
+  const frame = useRef(0);
+  const score = useRef(0);
   const paused = useRef(false);
 
   const [displayScore, setDisplayScore] = useState(0);
   const [gameState, setGameState] = useState('start'); // 'start', 'playing', 'gameover'
   const [finalScore, setFinalScore] = useState(0);
-  const [_, forceRerender] = useState(0); // For UI update triggers
+  const [, forceRerender] = useState(0); // For UI update triggers
 
   // Starfield
   const stars = useRef([]);
 
   // Load images once
   useEffect(() => {
-    shipImg.current     = new window.Image();
+    shipImg.current = new window.Image();
     obstacleImg.current = new window.Image();
-    laserImg.current    = new window.Image();
+    laserImg.current = new window.Image();
 
-    // Use your image assets!
-    shipImg.current.src     = '/ship.png';      // Replace with your image
-    obstacleImg.current.src = '/rock.png';      // Replace with your image
-    laserImg.current.src    = 'https://i.ibb.co/HrtGdb3/laser.png';     // Replace with your image
+    shipImg.current.src = '/ship.png';
+    obstacleImg.current.src = '/rock.png';
+    laserImg.current.src = 'https://i.ibb.co/HrtGdb3/laser.png';
   }, []);
 
   // Initialize stars once
@@ -101,7 +100,6 @@ export default function SpaceRunner() {
 
   // Main GAME LOOP
   const loop = useCallback(() => {
-    // Drawing will occur on buffer and then be copied over
     frame.current += 1;
 
     if (gameState === 'playing' && !paused.current) {
@@ -110,10 +108,8 @@ export default function SpaceRunner() {
         const type = Math.random() > 0.4 ? 'asteroid' : 'enemy';
         obsts.current.push({ x: CANVAS_WIDTH, y: yPos, w: OB_WIDTH, h: OB_HEIGHT, skin: type });
       }
-      if (KEY_UP.some((k) => keys.current.has(k)))
-        ship.current.y = Math.max(0, ship.current.y - 4);
-      if (KEY_DOWN.some((k) => keys.current.has(k)))
-        ship.current.y = Math.min(CANVAS_HEIGHT - SHIP_HEIGHT, ship.current.y + 4);
+      if (KEY_UP.some((k) => keys.current.has(k))) ship.current.y = Math.max(0, ship.current.y - 4);
+      if (KEY_DOWN.some((k) => keys.current.has(k))) ship.current.y = Math.min(CANVAS_HEIGHT - SHIP_HEIGHT, ship.current.y + 4);
 
       // Lasers
       if (KEY_SHOOT.some((k) => keys.current.has(k)) && frame.current % 10 === 0) {
@@ -144,7 +140,12 @@ export default function SpaceRunner() {
       // Collisions
       for (let i = obsts.current.length - 1; i >= 0; i--) {
         const ob = obsts.current[i];
-        if (rectsOverlap({ x: ship.current.x, y: ship.current.y, w: SHIP_WIDTH, h: SHIP_HEIGHT }, ob)) {
+        if (
+          rectsOverlap(
+            { x: ship.current.x, y: ship.current.y, w: SHIP_WIDTH, h: SHIP_HEIGHT },
+            ob
+          )
+        ) {
           paused.current = true;
           setGameState('gameover');
           setFinalScore(score.current);
@@ -173,8 +174,7 @@ export default function SpaceRunner() {
     const buf = bufferCanvasRef.current;
     const ctx = buf.getContext('2d');
 
-    // Starry background
-    ctx.fillStyle = '#000';
+    ctx.fillStyle = 'rgb(24 24 27)';
     ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 
     ctx.save();
@@ -192,7 +192,7 @@ export default function SpaceRunner() {
     if (shipImg.current.complete && shipImg.current.naturalWidth) {
       ctx.save();
       ctx.translate(ship.current.x + SHIP_WIDTH / 2, ship.current.y + SHIP_HEIGHT / 2);
-      ctx.rotate(Math.sin(frame.current / 12) * 0.03);  // Reduced rotation amplitude
+      ctx.rotate(Math.sin(frame.current / 12) * 0.03);
       ctx.drawImage(shipImg.current, -SHIP_WIDTH / 2, -SHIP_HEIGHT / 2, SHIP_WIDTH, SHIP_HEIGHT);
       ctx.restore();
     } else {
@@ -219,9 +219,9 @@ export default function SpaceRunner() {
     obsts.current.forEach((ob) => {
       ctx.save();
       ctx.translate(ob.x + ob.w / 2, ob.y + ob.h / 2);
-      const angle = Math.sin((frame.current + ob.x) / 30) * 0.15;  // Halved rotation speed/amplitude
+      const angle = Math.sin((frame.current + ob.x) / 30) * 0.15;
       ctx.rotate(angle);
-      const bounce = Math.sin(frame.current / 18 + ob.x / 40) * 2;  // Reduced bounce amplitude
+      const bounce = Math.sin(frame.current / 18 + ob.x / 40) * 2;
       if (obstacleImg.current.complete && obstacleImg.current.naturalWidth) {
         ctx.drawImage(obstacleImg.current, -ob.w / 2, -ob.h / 2 + bounce, ob.w, ob.h);
       } else {
@@ -233,25 +233,25 @@ export default function SpaceRunner() {
 
     // UI overlays
     ctx.fillStyle = '#fff';
-    ctx.font = '12px monospace';
+    ctx.font = '12px "Pixelify Sans", monospace';
     ctx.textAlign = 'right';
     ctx.fillText(`Score: ${score.current}`, CANVAS_WIDTH - 12, 20);
     ctx.textAlign = 'start';
 
     // Overlay screens inside the loop
     if (gameState === 'start' || gameState === 'gameover') {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.75)';
+      ctx.fillStyle = 'rgb(24 24 27)';
       ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 
       ctx.fillStyle = '#fff';
-      ctx.font = gameState === 'start' ? 'bold 32px monospace' : 'bold 28px monospace';
+      ctx.font = gameState === 'start' ? 'bold 32px "Pixelify Sans", monospace' : 'bold 28px "Pixelify Sans", monospace';
       ctx.textAlign = 'center';
       ctx.fillText(gameState === 'start' ? 'SPACE RUNNER' : 'GAME OVER', CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2 - 30);
 
-      ctx.font = '18px monospace';
+      ctx.font = '18px "Pixelify Sans", monospace';
       if (gameState === 'start') {
         ctx.fillText('Click to Start', CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2 + 10);
-        ctx.font = '14px monospace';
+        ctx.font = '14px "Pixelify Sans", monospace';
         ctx.fillText('Use Up/Down arrows to move', CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2 + 40);
         ctx.fillText('Spacebar to shoot, P to pause', CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2 + 65);
       } else {
@@ -266,13 +266,12 @@ export default function SpaceRunner() {
       ctx.fillStyle = 'rgba(0,0,0,0.4)';
       ctx.fillRect(CANVAS_WIDTH / 2 - 60, CANVAS_HEIGHT / 2 - 32, 120, 44);
       ctx.fillStyle = '#fff';
-      ctx.font = '22px monospace';
+      ctx.font = '22px "Pixelify Sans", monospace';
       ctx.textAlign = 'center';
       ctx.fillText('PAUSED', CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2);
       ctx.textAlign = 'start';
     }
 
-    // Output buffer to main canvas
     const vis = canvasRef.current.getContext('2d');
     vis.drawImage(buf, 0, 0);
 
@@ -297,6 +296,7 @@ export default function SpaceRunner() {
     const canvas = canvasRef.current;
     canvas.width = CANVAS_WIDTH;
     canvas.height = CANVAS_HEIGHT;
+
     const buf = document.createElement('canvas');
     buf.width = CANVAS_WIDTH;
     buf.height = CANVAS_HEIGHT;
@@ -320,7 +320,6 @@ export default function SpaceRunner() {
         width: CANVAS_WIDTH,
         height: CANVAS_HEIGHT,
         margin: '0 auto',
-        border: '2px solid #222',
         position: 'relative',
         background: '#000',
         userSelect: 'none',
@@ -349,10 +348,10 @@ export default function SpaceRunner() {
               padding: '4px 14px',
               background: paused.current ? '#222' : '#060',
               color: '#fff',
-              border: '1px solid #666',
               borderRadius: 3,
               opacity: 0.85,
               cursor: 'pointer',
+              
             }}
           >
             {paused.current ? 'Resume' : 'Pause'}
@@ -363,7 +362,7 @@ export default function SpaceRunner() {
               bottom: 4,
               left: 6,
               color: '#0f0',
-              font: '10px monospace',
+              font: '10px "Pixelify Sans", monospace',
               userSelect: 'none',
             }}
           >
