@@ -24,7 +24,7 @@ const Hero = () => {
         <p className="mt-2 text-gray-400 italic text-xs sm:text-sm animate-rise-fade delay-250">A fun 2D game to recharge between sessions is coming soon.</p>
 
         <div className="mt-20 animate-rise-fade delay-350">
-          <Link to="/exam-vault" className="inline-flex items-center justify-center space-x-3 bg-black text-white text-semibold px-5 py-2.5 rounded-full shadow-md hover:opacity-95">
+          <Link to="/exam-vault" className="inline-flex items-center justify-center space-x-3 bg-gray-800 text-white text-semibold px-5 py-2.5 rounded-full shadow-md hover:opacity-95">
             <span>Start exploring PYQs</span>
             <img src={doubleArrowIcon} alt="arrow" className="w-5 h-5" />
           </Link>

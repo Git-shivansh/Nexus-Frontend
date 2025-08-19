@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import examVaultAPI from '../services/api';
 import { useDropzone } from 'react-dropzone';
-
+import Footer from './Footer';
 // Efficient drag-and-drop file upload using react-dropzone
 function FileDropZone({ onFileAccepted }) {
   const { getRootProps, getInputProps, acceptedFiles, isDragActive } = useDropzone({
@@ -168,8 +168,8 @@ const ExamVault = () => {
   };
 
   return (
-    <main className="container mx-auto py-8 md:px-10 px-4">
-      <div className="space-y-8 mr-0 md:mr-8">
+    <main className="container ">
+      <div className="space-y-8 mx-auto py-8 md:px-10 px-4">
         {/* Header and Selection Section */}
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Header Card */}
@@ -548,6 +548,7 @@ const ExamVault = () => {
           </div>
         )}
       </div>
+      <Footer />
     </main>
   );
 };
