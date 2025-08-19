@@ -8,7 +8,7 @@ import Comingsoon from './components/ComingSoon';
 import ExamVault from './components/ExamVault';
 import Login from './components/Login';
 import Test from './components/test.jsx';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 
 // Layout wrapper component to handle conditional styling
 const Layout = ({ children, user, showLogin, handleLogout, handleLoginClick, onLogin, setShowLogin }) => {
