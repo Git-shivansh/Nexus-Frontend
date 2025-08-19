@@ -70,6 +70,18 @@ export default {
       backgroundImage: {
         'dark-gradient-to-b': 'linear-gradient(to bottom, rgba(39,39,42,0.8), rgb(24,24,27))',
       },
+
+      // Add custom keyframes and animation for shine effect
+      keyframes: {
+        shine: {
+          '0%': { 'background-position': '0% 0%' },
+          '50%': { 'background-position': '100% 100%' },
+          '100%': { 'background-position': '0% 0%' },
+        },
+      },
+      animation: {
+        shine: 'shine var(--duration, 14s) infinite linear',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

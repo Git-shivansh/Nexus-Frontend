@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/Animation.json";
 import Game from "./Game";
+import { ShineBorder } from "./magicui/shine-border";
 
 // Utility: combine class names
 function cn(...classes) {
@@ -10,11 +11,7 @@ function cn(...classes) {
 }
 
 // WobbleCard: adds wobble while preserving all styling and shape
-const WobbleCard = ({
-  children,
-  className = "",
-  ...rest
-}) => {
+const WobbleCard = ({ children, className = "", ...rest }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
 
@@ -89,6 +86,9 @@ function ComingSoon({ centerImage, rightImage }) {
                 )}
               </div>
             </div>
+            <div className="opacity-0 dark:opacity-100 transition-opacity duration-500 rounded-3xl">
+              <ShineBorder />
+            </div>
           </WobbleCard>
 
           {/* Center wide card: visible only on large screens (lg: ≥1024px) */}
@@ -110,6 +110,9 @@ function ComingSoon({ centerImage, rightImage }) {
                   <Game />
                 </div>
               </div>
+            </div>
+            <div className="opacity-0 dark:opacity-100 transition-opacity duration-500 rounded-3xl">
+              <ShineBorder />
             </div>
           </WobbleCard>
         </div>
