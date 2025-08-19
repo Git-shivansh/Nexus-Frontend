@@ -3,10 +3,13 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import { Meteors } from './components/magicui/meteors';
+import bgTopRight from './assets/bg.png';
 import Comingsoon from './components/ComingSoon';
 import ExamVault from './components/ExamVault';
 import Login from './components/Login';
 import Test from './components/test.jsx';
+import Footer from './components/footer';
+
 // Layout wrapper component to handle conditional styling
 const Layout = ({ children, user, showLogin, handleLogout, handleLoginClick, onLogin, setShowLogin }) => {
   const location = useLocation();
@@ -16,6 +19,16 @@ const Layout = ({ children, user, showLogin, handleLogout, handleLoginClick, onL
     <div className="relative">
       {/* Page background layer */}
       <div className="absolute inset-0 z-0 bg-brand-background" />
+
+      {/* Decorative top-right background image - visible only on Home */}
+      {isHomePage && (
+        <img
+          src={bgTopRight}
+          alt="background decorative"
+          className="pointer-events-none hidden sm:block absolute top-0 right-0 opacity-90"
+          style={{ zIndex: 5, width: '46rem', maxWidth: '100%' }}
+        />
+      )}
 
       {/* Meteors layer (visible above background, behind content) */}
       {isHomePage && (
@@ -78,6 +91,9 @@ function App() {
       </main>
       <div className="m-10">
         <Comingsoon />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );
