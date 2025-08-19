@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"; // Assuming you have a utility to join classna
 export function ShineBorder({
   borderWidth = 0.4,
   duration = 14,
-  shineColors = ["#161F2C", "#4a6796ff", '#rgba(188, 79, 20, 1)'],
+  shineColors = ["#161F2C", "#4a6796ff", 'rgba(188, 79, 20, 1)'],
   className,
   style,
   ...props
