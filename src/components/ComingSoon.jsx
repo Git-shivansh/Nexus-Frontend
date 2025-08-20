@@ -99,7 +99,7 @@ function ComingSoon({ centerImage, rightImage }) {
                   Till Then
                 </h2>
                 <p className="text-sm md:text-base text-zinc-400">
-                  Enjoy our 2D Game.
+                  Enjoy our Space Theme classic 2D Game.
                 </p>
               </div>
             </div>
