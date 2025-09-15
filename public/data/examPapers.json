@@ -248,5 +248,175 @@
     "year": 2024,
     "branch": "ECE",
     "fileUrl": "https://drive.google.com/open?id=15eK7mPCJFa5_wPsa1fkoUdAOr-n22VsA"
+  },
+  {
+    "id": 26,
+    "subjectCode": "EC301",
+    "subjectName": "Digital Signal Processing",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1J0GAZRZd7GtnLjiwmLNx8n0UDRzhmjlq"
+  },
+  {
+    "id": 27,
+    "subjectCode": "HS101",
+    "subjectName": "PROFESSIONAL COMMUNICATION",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1ZinmnbpTEdXboxg7icIEGn60PdyoA_5l"
+  },
+  {
+    "id": 28,
+    "subjectCode": "ME301",
+    "subjectName": "DYNAMICS OF MACHINERY",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1DwEdx1vkA-wC0BmRMvmEaQjJgIKhdLTk"
+  },
+  {
+    "id": 29,
+    "subjectCode": "CS303",
+    "subjectName": "Artificial Intelligence",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1KeyaHApyvL1mW969_TVK-HkfsLrr75Jn"
+  },
+  {
+    "id": 30,
+    "subjectCode": "EC304",
+    "subjectName": "IOT",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1-zbC5Hkb_E3I7AQ-tXUJk_KTGhN0ys-n"
+  },
+  {
+    "id": 31,
+    "subjectCode": "ECE101",
+    "subjectName": "ELECTRICAL SCIENCE",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1AYrq0zOT_Fsb0-M74q907j1eDn-Xos9g"
+  },
+  {
+    "id": 32,
+    "subjectCode": "ME301",
+    "subjectName": "Dynamics Of Machinery",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=14BZPCSBeBhY-2hpV5Ixhddr5UmuG4HDm"
+  },
+  {
+    "id": 33,
+    "subjectCode": "ME302",
+    "subjectName": "SENSORS AND ACTUATORS",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1_xLVqFLrvs4qcs30LdJC8uGKYsCvUVAN"
+  },
+  {
+    "id": 34,
+    "subjectCode": "EC301",
+    "subjectName": "DIGITAL",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1aO4QD7PnVKsqRT-j2eYw12-P3tW46BOY"
+  },
+  {
+    "id": 35,
+    "subjectCode": "ME103",
+    "subjectName": "ENGINEERING MATERIAL",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1j6NFb4guNCkRQTK9BOyGktxXHiWdXNX_"
+  },
+  {
+    "id": 36,
+    "subjectCode": "ME302",
+    "subjectName": "Sensors and Actuators",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1ds45WZdiF6qZ2c8GWoM0JoJZZsWA_sE4"
+  },
+  {
+    "id": 37,
+    "subjectCode": "ME301",
+    "subjectName": "DYNAMICS OF Mchinery",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=19HI_6FfkeAbUU0534Vzowxe2Q2g5KOvu"
+  },
+  {
+    "id": 38,
+    "subjectCode": "EC302",
+    "subjectName": "CONTROL SYSTEM",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1WR3V1FEdO4fwz1MT4MiYTxK96XO04bdV"
+  },
+  {
+    "id": 39,
+    "subjectCode": "CS303",
+    "subjectName": "AI",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1TxVoeRINnbqk0HysIJGiGw1aTXFR6RQ9"
+  },
+  {
+    "id": 40,
+    "subjectCode": "CS101",
+    "subjectName": "COMPUTER PROGRAMMING",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=18ocoE0FGFVws1BVLOGqHpEAPPozPoiEu"
+  },
+  {
+    "id": 41,
+    "subjectCode": "ECE304",
+    "subjectName": "IOT and Embedded Systems",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1VWfJhJdinvYhghgQnXxgO1EQwZcOjO-F"
+  },
+  {
+    "id": 42,
+    "subjectCode": "EC301",
+    "subjectName": "DIGITAL SIGNAL",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1LTY1SDSozbhxbLzTMQlgfTnRFUFo2R-9"
   }
 ]
