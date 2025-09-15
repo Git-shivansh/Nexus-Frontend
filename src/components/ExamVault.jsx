@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import examVaultAPI from "../services/api";
 import { useDropzone } from "react-dropzone";
 import Footer from "./Footer";
 // Efficient drag-and-drop file upload using react-dropzone
@@ -113,12 +112,12 @@ const ExamVault = () => {
   const [selectedYear, setSelectedYear] = useState("2023");
   const [selectedExamType, setSelectedExamType] = useState("Mid Sem");
   const [examPapers, setExamPapers] = useState([]);
+  const [allPapers, setAllPapers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showUploadForm, setShowUploadForm] = useState(false);
   const [uploadForm, setUploadForm] = useState({
     subjectCode: "",
     subjectName: "",
-    professorName: "",
     type: "Mid Sem",
     semester: "I",
     year: "2023",
@@ -177,36 +176,46 @@ const ExamVault = () => {
     showTypeDropdown,
   ]);
 
-  // Fetch exam papers from backend
+  // Load all papers from local JSON once
+  useEffect(() => {
+    let active = true;
+    const loadJSON = async () => {
+      try {
+        const res = await fetch("/data/examPapers.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("Failed to load examPapers.json");
+        const data = await res.json();
+        if (active) setAllPapers(Array.isArray(data) ? data : []);
+      } catch (e) {
+        console.error("Error loading local exam papers:", e);
+        if (active) setAllPapers([]);
+      }
+    };
+    loadJSON();
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  // Filter exam papers from loaded JSON
   const fetchExamPapers = async () => {
     setLoading(true);
     try {
-      // Convert semester to number for backend
-      const romanToNum = {
-        I: 1,
-        II: 2,
-        III: 3,
-        IV: 4,
-        V: 5,
-        VI: 6,
-        VII: 7,
-        VIII: 8,
-      };
+      const romanToNum = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8 };
       const semesterNum = romanToNum[selectedSemester] || 1;
-      // Fetch filtered papers from backend
-      const papers = await examVaultAPI.getExamPapers(
-        semesterNum,
-        selectedBranch,
-        selectedExamType,
-        selectedYear
-      );
-      // Only show PDFs
-      const filtered = papers.filter(
-        (paper) => paper.fileUrl && paper.fileUrl.toLowerCase().endsWith(".pdf")
-      );
+      const filtered = allPapers.filter((paper) => {
+        const matches =
+          (paper.semester === semesterNum || String(paper.semester) === String(semesterNum)) &&
+          String(paper.branch).toUpperCase() === String(selectedBranch).toUpperCase() &&
+          String(paper.type) === String(selectedExamType) &&
+          String(paper.year) === String(selectedYear);
+        const url = typeof paper.fileUrl === "string" ? paper.fileUrl : "";
+        const isSupportedLink =
+          url.length > 0 && (url.toLowerCase().endsWith(".pdf") || url.includes("drive.google.com"));
+        return matches && isSupportedLink;
+      });
       setExamPapers(filtered);
     } catch (error) {
-      console.error("Error fetching exam papers:", error);
+      console.error("Error filtering exam papers:", error);
       setExamPapers([]);
     } finally {
       setLoading(false);
@@ -216,12 +225,14 @@ const ExamVault = () => {
   useEffect(() => {
     fetchExamPapers();
     // eslint-disable-next-line
-  }, [selectedSemester, selectedBranch, selectedYear, selectedExamType]);
+  }, [selectedSemester, selectedBranch, selectedYear, selectedExamType, allPapers]);
 
   const semesters = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
   const branches = ["CSE", "ECE", "MAE", "MNC"];
   const years = ["2023", "2024", "2025"];
   const examTypes = ["Mid Sem", "End Sem"];
+
+  // No 'All' options; use strict filters
 
   const PaperCard = ({ paper }) => {
     return (
@@ -252,9 +263,6 @@ const ExamVault = () => {
           <div className="text-sm text-gray-700 font-medium text-center mb-1">
             {paper.subjectName}
           </div>
-          <div className="text-xs text-red-600 font-medium text-center">
-            {paper.professorName}
-          </div>
         </div>
       </a>
     );
@@ -272,10 +280,12 @@ const ExamVault = () => {
               <p className="text-sm text-gray-300 dark:text-gray-400 leading-relaxed">in One click. One place for all.</p>
             </div>
             <button
-              className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 shadow-lg"
-              onClick={() => setShowUploadForm(true)}
+              className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2.5 rounded-lg text-sm font-medium opacity-60 cursor-not-allowed"
+              disabled
+              aria-disabled="true"
+              title="Uploads disabled for now"
             >
-              Upload a resource
+              Uploads disabled
             </button>
           </div>
 
@@ -319,15 +329,6 @@ const ExamVault = () => {
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div>
-                      <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Professor Name</label>
-                      <input
-                        type="text"
-                        className="w-full border border-gray-200 dark:border-zinc-600 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-100 dark:focus:ring-orange-900 focus:border-orange-400 min-w-0 mb-2 transition-colors duration-150 hover:border-orange-300 hover:bg-orange-50/30 dark:hover:bg-orange-900/30 hover:shadow-sm bg-white dark:bg-zinc-800 text-gray-900 dark:text-gray-100"
-                        value={uploadForm.professorName}
-                        onChange={(e) => setUploadForm({ ...uploadForm, professorName: e.target.value })}
-                      />
-                    </div>
                     <div>
                       <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Type</label>
                       <div className="relative" ref={typeDropdownRef}>
@@ -495,7 +496,6 @@ const ExamVault = () => {
                       const formData = new FormData();
                       formData.append("subjectCode", uploadForm.subjectCode);
                       formData.append("subjectName", uploadForm.subjectName);
-                      formData.append("professorName", uploadForm.professorName);
                       formData.append("type", uploadForm.type);
                       formData.append("semester", semesterNum);
                       formData.append("year", yearNum);

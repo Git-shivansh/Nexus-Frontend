@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "subjectCode": "CSE101",
+    "subjectName": "C Programming",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2023,
+    "branch": "CSE",
+    "fileUrl": "/sample-pdfs/CSE101-midsem-2023.pdf"
+  },
+  {
+    "id": 2,
+    "subjectCode": "CSE101",
+    "subjectName": "Computer Programming",
+    "type": "End Sem",
+    "semester": 1,
+    "year": 2023,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/file/d/1SoWqwQRtWt_Vp-IPnE86Vl5UDxfU7h_0/view?usp=drive_link"
+  },
+  {
+    "id": 3,
+    "subjectCode": "ECE201",
+    "subjectName": "Signals and Systems",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2024,
+    "branch": "ECE",
+    "fileUrl": "/sample-pdfs/ECE201-midsem-2024.pdf"
+  },
+  {
+    "id": 4,
+    "subjectCode": "CSE202",
+    "subjectName": "Data Structures",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2023,
+    "branch": "CSE",
+    "fileUrl": "/sample-pdfs/CSE202-midsem-2023.pdf"
+  },
+  {
+    "id": 5,
+    "subjectCode": "CSE202",
+    "subjectName": "Data Structures",
+    "type": "End Sem",
+    "semester": 3,
+    "year": 2023,
+    "branch": "CSE",
+    "fileUrl": "/sample-pdfs/CSE202-endsem-2023.pdf"
+  },
+  {
+    "id": 6,
+    "subjectCode": "ECE102",
+    "subjectName": "Basic Electronics",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2023,
+    "branch": "ECE",
+    "fileUrl": "/sample-pdfs/ECE102-midsem-2023.pdf"
+  },
+  {
+    "id": 7,
+    "subjectCode": "ECE102",
+    "subjectName": "Basic Electronics",
+    "type": "End Sem",
+    "semester": 1,
+    "year": 2023,
+    "branch": "ECE",
+    "fileUrl": "/sample-pdfs/ECE102-endsem-2023.pdf"
+  },
+  {
+    "id": 8,
+    "subjectCode": "MNC201",
+    "subjectName": "Linear Algebra",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2024,
+    "branch": "MNC",
+    "fileUrl": "/sample-pdfs/MNC201-midsem-2024.pdf"
+  },
+  {
+    "id": 9,
+    "subjectCode": "MNC201",
+    "subjectName": "Linear Algebra",
+    "type": "End Sem",
+    "semester": 3,
+    "year": 2024,
+    "branch": "MNC",
+    "fileUrl": "/sample-pdfs/MNC201-endsem-2024.pdf"
+  },
+  {
+    "id": 10,
+    "subjectCode": "MAE301",
+    "subjectName": "Fluid Mechanics",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "/sample-pdfs/MAE301-midsem-2023.pdf"
+  },
+  {
+    "id": 11,
+    "subjectCode": "MAE301",
+    "subjectName": "Fluid Mechanics",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "/sample-pdfs/MAE301-endsem-2023.pdf"
+  },
+  {
+    "id": 12,
+    "subjectCode": "CSE303",
+    "subjectName": "Operating Systems",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "/sample-pdfs/CSE303-midsem-2024.pdf"
+  },
+  {
+    "id": 13,
+    "subjectCode": "CSE303",
+    "subjectName": "Operating Systems",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "/sample-pdfs/CSE303-endsem-2024.pdf"
+  },
+  {
+    "id": 14,
+    "subjectCode": "ECE305",
+    "subjectName": "Digital Communication",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "ECE",
+    "fileUrl": "/sample-pdfs/ECE305-midsem-2023.pdf"
+  },
+  {
+    "id": 15,
+    "subjectCode": "ECE305",
+    "subjectName": "Digital Communication",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "ECE",
+    "fileUrl": "/sample-pdfs/ECE305-endsem-2023.pdf"
+  },
+  {
+    "id": 16,
+    "subjectCode": "MNC301",
+    "subjectName": "Probability and Statistics",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2025,
+    "branch": "MNC",
+    "fileUrl": "/sample-pdfs/MNC301-midsem-2025.pdf"
+  },
+  {
+    "id": 17,
+    "subjectCode": "MNC301",
+    "subjectName": "Probability and Statistics",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2025,
+    "branch": "MNC",
+    "fileUrl": "/sample-pdfs/MNC301-endsem-2025.pdf"
+  },
+  {
+    "id": 18,
+    "subjectCode": "MAE401",
+    "subjectName": "Robotics",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "/sample-pdfs/MAE401-midsem-2024.pdf"
+  },
+  {
+    "id": 19,
+    "subjectCode": "MAE401",
+    "subjectName": "Robotics",
+    "type": "End Sem",
+    "semester": 7,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "/sample-pdfs/MAE401-endsem-2024.pdf"
+  },
+  {
+    "id": 20,
+    "subjectCode": "CSE401",
+    "subjectName": "Machine Learning",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "/sample-pdfs/CSE401-midsem-2025.pdf"
+  },
+  {
+    "id": 21,
+    "subjectCode": "CSE401",
+    "subjectName": "Machine Learning",
+    "type": "End Sem",
+    "semester": 7,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "/sample-pdfs/CSE401-endsem-2025.pdf"
+  },
+  {
+    "id": 22,
+    "subjectCode": "ECE401",
+    "subjectName": "VLSI Design",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2024,
+    "branch": "ECE",
+    "fileUrl": "/sample-pdfs/ECE401-midsem-2024.pdf"
+  },
+  {
+    "id": 23,
+    "subjectCode": "ECE401",
+    "subjectName": "VLSI Design",
+    "type": "End Sem",
+    "semester": 7,
+    "year": 2024,
+    "branch": "ECE",
+    "fileUrl": "/sample-pdfs/ECE401-endsem-2024.pdf"
+  },
+  {
+    "id": 24,
+    "subjectCode": "MNC401",
+    "subjectName": "Numerical Methods",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2025,
+    "branch": "MNC",
+    "fileUrl": "/sample-pdfs/MNC401-midsem-2025.pdf"
+  },
+  {
+    "id": 25,
+    "subjectCode": "MNC401",
+    "subjectName": "Numerical Methods",
+    "type": "End Sem",
+    "semester": 7,
+    "year": 2025,
+    "branch": "MNC",
+    "fileUrl": "/sample-pdfs/MNC401-endsem-2025.pdf"
+  }
+]
