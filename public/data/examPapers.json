@@ -1251,26 +1251,6 @@
   },
   {
     "id": 126,
-    "subjectCode": "EC301",
-    "subjectName": "Digital Signal Processing",
-    "type": "Mid Sem",
-    "semester": 5,
-    "year": 2024,
-    "branch": "MAE",
-    "fileUrl": "https://drive.google.com/open?id=1J0GAZRZd7GtnLjiwmLNx8n0UDRzhmjlq"
-  },
-  {
-    "id": 127,
-    "subjectCode": "ECE304",
-    "subjectName": "IOT and Embedded Systems",
-    "type": "End Sem",
-    "semester": 5,
-    "year": 2024,
-    "branch": "MAE",
-    "fileUrl": "https://drive.google.com/open?id=1VWfJhJdinvYhghgQnXxgO1EQwZcOjO-F"
-  },
-  {
-    "id": 128,
     "subjectCode": "EC302",
     "subjectName": "CONTROL SYSTEM",
     "type": "Mid Sem",
@@ -1280,7 +1260,7 @@
     "fileUrl": "https://drive.google.com/open?id=1WR3V1FEdO4fwz1MT4MiYTxK96XO04bdV"
   },
   {
-    "id": 129,
+    "id": 127,
     "subjectCode": "CS303",
     "subjectName": "AI",
     "type": "Mid Sem",
@@ -1290,7 +1270,7 @@
     "fileUrl": "https://drive.google.com/open?id=1TxVoeRINnbqk0HysIJGiGw1aTXFR6RQ9"
   },
   {
-    "id": 130,
+    "id": 128,
     "subjectCode": "EC301",
     "subjectName": "DIGITAL SIGNAL",
     "type": "End Sem",
@@ -1300,7 +1280,7 @@
     "fileUrl": "https://drive.google.com/open?id=1LTY1SDSozbhxbLzTMQlgfTnRFUFo2R-9"
   },
   {
-    "id": 131,
+    "id": 129,
     "subjectCode": "EC302",
     "subjectName": "CONTROL SYSTEM",
     "type": "End Sem",
@@ -1310,7 +1290,7 @@
     "fileUrl": "https://drive.google.com/open?id=1bDuzaoQQZdFHYHgIZPXh_wCpEclygK7W"
   },
   {
-    "id": 132,
+    "id": 130,
     "subjectCode": "CS303",
     "subjectName": "AI",
     "type": "End Sem",
@@ -1320,7 +1300,7 @@
     "fileUrl": "https://drive.google.com/open?id=1_UH2MPCn3KitG8SQajUpx4LixCAScD0B"
   },
   {
-    "id": 133,
+    "id": 131,
     "subjectCode": "EC304",
     "subjectName": "IOT",
     "type": "End Sem",
@@ -1330,7 +1310,7 @@
     "fileUrl": "https://drive.google.com/open?id=1GyfvhpqSbIXh0R_gw0eD4kyAr7gJtnli"
   },
   {
-    "id": 134,
+    "id": 132,
     "subjectCode": "CS203",
     "subjectName": "OOPS",
     "type": "End Sem",
@@ -1340,7 +1320,7 @@
     "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
-    "id": 135,
+    "id": 133,
     "subjectCode": "CS203",
     "subjectName": "OOPS",
     "type": "End Sem",
@@ -1350,7 +1330,7 @@
     "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
-    "id": 136,
+    "id": 134,
     "subjectCode": "CS203",
     "subjectName": "OOPS",
     "type": "End Sem",
@@ -1360,7 +1340,7 @@
     "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
-    "id": 137,
+    "id": 135,
     "subjectCode": "CS201",
     "subjectName": "Design Analysis and Algorithm",
     "type": "End Sem",
@@ -1370,17 +1350,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lmczUxf81axuOZ8jeMAohc8F_dPNv6Wp"
   },
   {
-    "id": 138,
-    "subjectCode": "CS201",
-    "subjectName": "Design Analysis and Algorithm",
-    "type": "Mid Sem",
-    "semester": 3,
-    "year": 2024,
-    "branch": "MNC",
-    "fileUrl": "https://drive.google.com/open?id=1He_pYKYdq-AMVFhoCNFkh25q9q5XGKmE"
-  },
-  {
-    "id": 139,
+    "id": 136,
     "subjectCode": "CS202",
     "subjectName": "Discrete Mathematics",
     "type": "End Sem",
@@ -1390,7 +1360,7 @@
     "fileUrl": "https://drive.google.com/open?id=1hrJp-E3x9Qgchc1miCb9QMDYdXk2oEW0"
   },
   {
-    "id": 140,
+    "id": 137,
     "subjectCode": "CS203",
     "subjectName": "Object Oriented and Programming",
     "type": "Mid Sem",
@@ -1400,17 +1370,7 @@
     "fileUrl": "https://drive.google.com/open?id=117DNAvLhTwcrIaa8jd6O6fGicHQCQjfw"
   },
   {
-    "id": 141,
-    "subjectCode": "CS203",
-    "subjectName": "Object Oriented and Programming",
-    "type": "End Sem",
-    "semester": 3,
-    "year": 2024,
-    "branch": "MNC",
-    "fileUrl": "https://drive.google.com/open?id=1UijTLVDslr0LNVs22HUJDxtYnM37DGgw"
-  },
-  {
-    "id": 142,
+    "id": 138,
     "subjectCode": "CS207",
     "subjectName": "Computer Organization and Architecture",
     "type": "End Sem",
@@ -1420,7 +1380,7 @@
     "fileUrl": "https://drive.google.com/open?id=1VHaeFqD4iY0dm6odgKiNc1iUUIfh6kZc"
   },
   {
-    "id": 143,
+    "id": 139,
     "subjectCode": "CS207",
     "subjectName": "Computer Organization and Architecture",
     "type": "Mid Sem",
@@ -1430,17 +1390,7 @@
     "fileUrl": "https://drive.google.com/open?id=10iXMJLUDM3U7ddhXS4lAMZwMX39JYtHv"
   },
   {
-    "id": 144,
-    "subjectCode": "HS201",
-    "subjectName": "Management Concept and Technology",
-    "type": "End Sem",
-    "semester": 3,
-    "year": 2024,
-    "branch": "MNC",
-    "fileUrl": "https://drive.google.com/open?id=1qJKTxnDer8HMGGmTov4XDb_GaxFfBm0p"
-  },
-  {
-    "id": 145,
+    "id": 140,
     "subjectCode": "HS201",
     "subjectName": "Management concept and Technology",
     "type": "Mid Sem",
@@ -1450,7 +1400,7 @@
     "fileUrl": "https://drive.google.com/open?id=1N07pPyApGSa_MO8hPOXnU0ejR-2AIBPC"
   },
   {
-    "id": 146,
+    "id": 141,
     "subjectCode": "MA201",
     "subjectName": "Engineering Mathematics",
     "type": "Mid Sem",
@@ -1460,7 +1410,7 @@
     "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
-    "id": 147,
+    "id": 142,
     "subjectCode": "MA201",
     "subjectName": "Engineering Mathematics",
     "type": "Mid Sem",
@@ -1470,7 +1420,7 @@
     "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
-    "id": 148,
+    "id": 143,
     "subjectCode": "MA201",
     "subjectName": "Engineering Mathematics",
     "type": "Mid Sem",
@@ -1480,7 +1430,7 @@
     "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
-    "id": 149,
+    "id": 144,
     "subjectCode": "MA201",
     "subjectName": "MATHS",
     "type": "End Sem",
@@ -1490,7 +1440,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lqbzeHSxM-klEAoIkBvqbQucb86k9fAo"
   },
   {
-    "id": 150,
+    "id": 145,
     "subjectCode": "MA201",
     "subjectName": "MATHS",
     "type": "End Sem",
@@ -1500,7 +1450,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lqbzeHSxM-klEAoIkBvqbQucb86k9fAo"
   },
   {
-    "id": 151,
+    "id": 146,
     "subjectCode": "MA201",
     "subjectName": "MATHS",
     "type": "End Sem",
@@ -1510,7 +1460,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lqbzeHSxM-klEAoIkBvqbQucb86k9fAo"
   },
   {
-    "id": 152,
+    "id": 147,
     "subjectCode": "MA101",
     "subjectName": "ENGINEERING MATHEMATICS",
     "type": "Mid Sem",
