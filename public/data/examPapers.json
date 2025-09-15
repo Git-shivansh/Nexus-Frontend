@@ -1,252 +1,252 @@
 [
   {
     "id": 1,
-    "subjectCode": "CSE101",
-    "subjectName": "C Programming",
-    "type": "Mid Sem",
-    "semester": 1,
-    "year": 2023,
-    "branch": "CSE",
-    "fileUrl": "/sample-pdfs/CSE101-midsem-2023.pdf"
+    "subjectCode": "HS201",
+    "subjectName": "MANAGEMENT CONCEPT AND TECHNOLOGY",
+    "type": "End Sem",
+    "semester": 3,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1vo0j1NyBpuDuMZkc5OnGzjjwhhSj7mIq"
   },
   {
     "id": 2,
-    "subjectCode": "CSE101",
-    "subjectName": "Computer Programming",
+    "subjectCode": "CS203",
+    "subjectName": "OOPS",
     "type": "End Sem",
-    "semester": 1,
-    "year": 2023,
-    "branch": "CSE",
-    "fileUrl": "https://drive.google.com/file/d/1SoWqwQRtWt_Vp-IPnE86Vl5UDxfU7h_0/view?usp=drive_link"
+    "semester": 3,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
     "id": 3,
-    "subjectCode": "ECE201",
-    "subjectName": "Signals and Systems",
-    "type": "Mid Sem",
+    "subjectCode": "CS201",
+    "subjectName": "Design Analysis and Algorithm",
+    "type": "End Sem",
     "semester": 3,
     "year": 2024,
-    "branch": "ECE",
-    "fileUrl": "/sample-pdfs/ECE201-midsem-2024.pdf"
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1lmczUxf81axuOZ8jeMAohc8F_dPNv6Wp"
   },
   {
     "id": 4,
-    "subjectCode": "CSE202",
-    "subjectName": "Data Structures",
-    "type": "Mid Sem",
+    "subjectCode": "ME202",
+    "subjectName": "THERMODYNAMICS",
+    "type": "End Sem",
     "semester": 3,
-    "year": 2023,
-    "branch": "CSE",
-    "fileUrl": "/sample-pdfs/CSE202-midsem-2023.pdf"
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1keRQsfucv4NoeL_WzUHYhCq6x_MEVPg_"
   },
   {
     "id": 5,
-    "subjectCode": "CSE202",
-    "subjectName": "Data Structures",
-    "type": "End Sem",
+    "subjectCode": "CS201",
+    "subjectName": "Design Analysis and Algorithm",
+    "type": "Mid Sem",
     "semester": 3,
-    "year": 2023,
+    "year": 2024,
     "branch": "CSE",
-    "fileUrl": "/sample-pdfs/CSE202-endsem-2023.pdf"
+    "fileUrl": "https://drive.google.com/open?id=1He_pYKYdq-AMVFhoCNFkh25q9q5XGKmE"
   },
   {
     "id": 6,
-    "subjectCode": "ECE102",
-    "subjectName": "Basic Electronics",
-    "type": "Mid Sem",
-    "semester": 1,
-    "year": 2023,
-    "branch": "ECE",
-    "fileUrl": "/sample-pdfs/ECE102-midsem-2023.pdf"
+    "subjectCode": "ME201",
+    "subjectName": "SOLID MECHANICS",
+    "type": "End Sem",
+    "semester": 3,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=16aplgPh7m-cCcu8OWylU3OFfMQfig4oq"
   },
   {
     "id": 7,
-    "subjectCode": "ECE102",
-    "subjectName": "Basic Electronics",
+    "subjectCode": "HS101",
+    "subjectName": "ENGLISH COMMUNICATION",
     "type": "End Sem",
     "semester": 1,
     "year": 2023,
-    "branch": "ECE",
-    "fileUrl": "/sample-pdfs/ECE102-endsem-2023.pdf"
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1AW6nuTX0W8PkHo-6LKjm80mqfbHLSHfE"
   },
   {
     "id": 8,
-    "subjectCode": "MNC201",
-    "subjectName": "Linear Algebra",
-    "type": "Mid Sem",
+    "subjectCode": "ME203",
+    "subjectName": "ELECTRICAL MACHINE",
+    "type": "End Sem",
     "semester": 3,
     "year": 2024,
-    "branch": "MNC",
-    "fileUrl": "/sample-pdfs/MNC201-midsem-2024.pdf"
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1hJ5vS-LkXBLqsk54is-mNkTfKurXWbl9"
   },
   {
     "id": 9,
-    "subjectCode": "MNC201",
-    "subjectName": "Linear Algebra",
+    "subjectCode": "CS202",
+    "subjectName": "Discrete Mathematics",
     "type": "End Sem",
     "semester": 3,
     "year": 2024,
-    "branch": "MNC",
-    "fileUrl": "/sample-pdfs/MNC201-endsem-2024.pdf"
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1hrJp-E3x9Qgchc1miCb9QMDYdXk2oEW0"
   },
   {
     "id": 10,
-    "subjectCode": "MAE301",
-    "subjectName": "Fluid Mechanics",
-    "type": "Mid Sem",
-    "semester": 5,
-    "year": 2023,
+    "subjectCode": "MA 201",
+    "subjectName": "MATHS",
+    "type": "End Sem",
+    "semester": 3,
+    "year": 2024,
     "branch": "MAE",
-    "fileUrl": "/sample-pdfs/MAE301-midsem-2023.pdf"
+    "fileUrl": "https://drive.google.com/open?id=1lqbzeHSxM-klEAoIkBvqbQucb86k9fAo"
   },
   {
     "id": 11,
-    "subjectCode": "MAE301",
-    "subjectName": "Fluid Mechanics",
-    "type": "End Sem",
-    "semester": 5,
-    "year": 2023,
-    "branch": "MAE",
-    "fileUrl": "/sample-pdfs/MAE301-endsem-2023.pdf"
+    "subjectCode": "CS203",
+    "subjectName": "Object Oriented and Programming",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=117DNAvLhTwcrIaa8jd6O6fGicHQCQjfw"
   },
   {
     "id": 12,
-    "subjectCode": "CSE303",
-    "subjectName": "Operating Systems",
-    "type": "Mid Sem",
-    "semester": 5,
+    "subjectCode": "CS203",
+    "subjectName": "Object Oriented and Programming",
+    "type": "End Sem",
+    "semester": 3,
     "year": 2024,
     "branch": "CSE",
-    "fileUrl": "/sample-pdfs/CSE303-midsem-2024.pdf"
+    "fileUrl": "https://drive.google.com/open?id=1UijTLVDslr0LNVs22HUJDxtYnM37DGgw"
   },
   {
     "id": 13,
-    "subjectCode": "CSE303",
-    "subjectName": "Operating Systems",
+    "subjectCode": "CS207",
+    "subjectName": "Computer Organization and Architecture",
     "type": "End Sem",
-    "semester": 5,
+    "semester": 3,
     "year": 2024,
     "branch": "CSE",
-    "fileUrl": "/sample-pdfs/CSE303-endsem-2024.pdf"
+    "fileUrl": "https://drive.google.com/open?id=1VHaeFqD4iY0dm6odgKiNc1iUUIfh6kZc"
   },
   {
     "id": 14,
-    "subjectCode": "ECE305",
-    "subjectName": "Digital Communication",
+    "subjectCode": "CS207",
+    "subjectName": "Computer Organization and Architecture",
     "type": "Mid Sem",
-    "semester": 5,
-    "year": 2023,
-    "branch": "ECE",
-    "fileUrl": "/sample-pdfs/ECE305-midsem-2023.pdf"
+    "semester": 3,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=10iXMJLUDM3U7ddhXS4lAMZwMX39JYtHv"
   },
   {
     "id": 15,
-    "subjectCode": "ECE305",
-    "subjectName": "Digital Communication",
+    "subjectCode": "ME102",
+    "subjectName": "ENGINEERING GRAPHIC",
     "type": "End Sem",
-    "semester": 5,
+    "semester": 1,
     "year": 2023,
-    "branch": "ECE",
-    "fileUrl": "/sample-pdfs/ECE305-endsem-2023.pdf"
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1228t38x6Z85NykfHYR58gacSTnP-vTTc"
   },
   {
     "id": 16,
-    "subjectCode": "MNC301",
-    "subjectName": "Probability and Statistics",
-    "type": "Mid Sem",
-    "semester": 5,
-    "year": 2025,
-    "branch": "MNC",
-    "fileUrl": "/sample-pdfs/MNC301-midsem-2025.pdf"
+    "subjectCode": "HS201",
+    "subjectName": "Management Concept and Technology",
+    "type": "End Sem",
+    "semester": 3,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1qJKTxnDer8HMGGmTov4XDb_GaxFfBm0p"
   },
   {
     "id": 17,
-    "subjectCode": "MNC301",
-    "subjectName": "Probability and Statistics",
-    "type": "End Sem",
-    "semester": 5,
-    "year": 2025,
-    "branch": "MNC",
-    "fileUrl": "/sample-pdfs/MNC301-endsem-2025.pdf"
+    "subjectCode": "HS201",
+    "subjectName": "Management concept and Technology",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1N07pPyApGSa_MO8hPOXnU0ejR-2AIBPC"
   },
   {
     "id": 18,
-    "subjectCode": "MAE401",
-    "subjectName": "Robotics",
-    "type": "Mid Sem",
-    "semester": 7,
-    "year": 2024,
+    "subjectCode": "PF101",
+    "subjectName": "ENGINEERING PHYSICS",
+    "type": "End Sem",
+    "semester": 1,
+    "year": 2023,
     "branch": "MAE",
-    "fileUrl": "/sample-pdfs/MAE401-midsem-2024.pdf"
+    "fileUrl": "https://drive.google.com/open?id=1UL6neStTlJ9oDOioJ_NZcBr4VtfTaWa5"
   },
   {
     "id": 19,
-    "subjectCode": "MAE401",
-    "subjectName": "Robotics",
-    "type": "End Sem",
-    "semester": 7,
+    "subjectCode": "MA201",
+    "subjectName": "Engineering Mathematics",
+    "type": "Mid Sem",
+    "semester": 3,
     "year": 2024,
-    "branch": "MAE",
-    "fileUrl": "/sample-pdfs/MAE401-endsem-2024.pdf"
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
     "id": 20,
-    "subjectCode": "CSE401",
-    "subjectName": "Machine Learning",
-    "type": "Mid Sem",
-    "semester": 7,
-    "year": 2025,
-    "branch": "CSE",
-    "fileUrl": "/sample-pdfs/CSE401-midsem-2025.pdf"
+    "subjectCode": "CS101",
+    "subjectName": "COMPUTER PROGRAMMING",
+    "type": "End Sem",
+    "semester": 1,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1LmS9HuBNCn5ca2CR7fVrAbm9QDnmqGl8"
   },
   {
     "id": 21,
-    "subjectCode": "CSE401",
-    "subjectName": "Machine Learning",
+    "subjectCode": "ECE101",
+    "subjectName": "ELECTRICAL SCIENCE",
     "type": "End Sem",
-    "semester": 7,
-    "year": 2025,
-    "branch": "CSE",
-    "fileUrl": "/sample-pdfs/CSE401-endsem-2025.pdf"
+    "semester": 1,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1EJWqYR1J3IhcX6ilOSzzTMCoinOrPP_6"
   },
   {
     "id": 22,
-    "subjectCode": "ECE401",
-    "subjectName": "VLSI Design",
+    "subjectCode": "CS303",
+    "subjectName": "Artificial Intelligence",
     "type": "Mid Sem",
-    "semester": 7,
+    "semester": 5,
     "year": 2024,
-    "branch": "ECE",
-    "fileUrl": "/sample-pdfs/ECE401-midsem-2024.pdf"
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1sOc3J61w0JZkhN9xWaHEse089Jx3X-q6"
   },
   {
     "id": 23,
-    "subjectCode": "ECE401",
-    "subjectName": "VLSI Design",
-    "type": "End Sem",
-    "semester": 7,
+    "subjectCode": "ME301",
+    "subjectName": "Dynamics Of Machinery",
+    "type": "Mid Sem",
+    "semester": 5,
     "year": 2024,
-    "branch": "ECE",
-    "fileUrl": "/sample-pdfs/ECE401-endsem-2024.pdf"
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1UPaDoQkLvSpnf1O4sPwqQ-WRavb4pwmt"
   },
   {
     "id": 24,
-    "subjectCode": "MNC401",
-    "subjectName": "Numerical Methods",
+    "subjectCode": "ME-302",
+    "subjectName": "Sensors And Actuators",
     "type": "Mid Sem",
-    "semester": 7,
-    "year": 2025,
-    "branch": "MNC",
-    "fileUrl": "/sample-pdfs/MNC401-midsem-2025.pdf"
+    "semester": 5,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1RQBu6ju9-qY9QqmmwhQiwzxnZeXLmSEt"
   },
   {
     "id": 25,
-    "subjectCode": "MNC401",
-    "subjectName": "Numerical Methods",
-    "type": "End Sem",
-    "semester": 7,
-    "year": 2025,
-    "branch": "MNC",
-    "fileUrl": "/sample-pdfs/MNC401-endsem-2025.pdf"
+    "subjectCode": "EC304",
+    "subjectName": "IOT and Embadded Systems",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=15eK7mPCJFa5_wPsa1fkoUdAOr-n22VsA"
   }
 ]
