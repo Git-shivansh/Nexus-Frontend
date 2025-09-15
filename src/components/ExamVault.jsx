@@ -109,7 +109,7 @@ const ExamVault = () => {
   const typeDropdownRef = React.useRef(null);
   const [selectedSemester, setSelectedSemester] = useState("I");
   const [selectedBranch, setBranch] = useState("CSE");
-  const [selectedYear, setSelectedYear] = useState("2023");
+  const [selectedYear, setSelectedYear] = useState("2024");
   const [selectedExamType, setSelectedExamType] = useState("Mid Sem");
   const [examPapers, setExamPapers] = useState([]);
   const [allPapers, setAllPapers] = useState([]);
