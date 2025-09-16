@@ -34,7 +34,12 @@ export default function SpaceRunner() {
   // Skins: images
   const shipImg = useRef(null);
   const obstacleImg = useRef(null);
+  const obstructionImg = useRef(null); // For indestructible obstacles
   const laserImg = useRef(null);
+
+  // Audio
+  const laserSound = useRef(null);
+  const gameOverSound = useRef(null);
 
   // Game state
   const ship = useRef({ x: 50, y: CANVAS_HEIGHT / 2 - SHIP_HEIGHT / 2 });
@@ -44,6 +49,8 @@ export default function SpaceRunner() {
   const frame = useRef(0);
   const score = useRef(0);
   const paused = useRef(false);
+  const laserCooldown = useRef(0); // Laser cooldown timer
+  const maxLasersOnScreen = useRef(3); // Maximum lasers allowed on screen
 
   const [displayScore, setDisplayScore] = useState(0);
   const [gameState, setGameState] = useState('start'); // 'start', 'playing', 'gameover'
@@ -53,15 +60,25 @@ export default function SpaceRunner() {
   // Starfield
   const stars = useRef([]);
 
-  // Load images once
+  // Load images and audio once
   useEffect(() => {
     shipImg.current = new window.Image();
     obstacleImg.current = new window.Image();
+    obstructionImg.current = new window.Image();
     laserImg.current = new window.Image();
 
     shipImg.current.src = '/ship.png';
     obstacleImg.current.src = '/rock.png';
+    obstructionImg.current.src = '/obstruction.png';
     laserImg.current.src = 'https://i.ibb.co/HrtGdb3/laser.png';
+
+    // Load audio files
+    laserSound.current = new Audio('/laser-shoot.mp3');
+    gameOverSound.current = new Audio('/GameOver.mp3');
+    
+    // Preload audio
+    laserSound.current.preload = 'auto';
+    gameOverSound.current.preload = 'auto';
   }, []);
 
   // Initialize stars once
@@ -103,28 +120,131 @@ export default function SpaceRunner() {
     frame.current += 1;
 
     if (gameState === 'playing' && !paused.current) {
-      if (frame.current % SPAWN_EVERY === 0) {
+      // Progressive difficulty - spawn rate increases over time
+      const currentSpawnRate = Math.max(30, SPAWN_EVERY - Math.floor(score.current / 500));
+      
+      if (frame.current % currentSpawnRate === 0) {
         const yPos = Math.random() * (CANVAS_HEIGHT - OB_HEIGHT);
         const type = Math.random() > 0.4 ? 'asteroid' : 'enemy';
-        obsts.current.push({ x: CANVAS_WIDTH, y: yPos, w: OB_WIDTH, h: OB_HEIGHT, skin: type });
+        const isIndestructible = Math.random() > (0.85 - score.current * 0.0001); // Slightly more indestructible over time
+        const direction = Math.random() > (0.8 - score.current * 0.0002) ? 'vertical' : 'horizontal'; // More vertical obstacles over time
+        
+        if (direction === 'vertical') {
+          // Spawn from top or bottom with safe zone around ship
+          const fromTop = Math.random() > 0.5;
+          let safeX;
+          
+          // Create safe zone around ship (ship is at x: 50, width: 40)
+          const shipLeft = ship.current.x;
+          const shipRight = ship.current.x + SHIP_WIDTH;
+          const safeZoneWidth = 80; // 40px buffer on each side of ship
+          
+          // Choose spawn position avoiding ship area
+          if (Math.random() > 0.5) {
+            // Spawn on right side of safe zone
+            safeX = Math.max(shipRight + 20, Math.random() * (CANVAS_WIDTH - OB_WIDTH - (shipRight + 20)) + (shipRight + 20));
+          } else {
+            // Spawn on left side of safe zone (if there's space)
+            const leftSpace = Math.max(0, shipLeft - 20);
+            if (leftSpace > OB_WIDTH) {
+              safeX = Math.random() * (leftSpace - OB_WIDTH);
+            } else {
+              // Fallback to right side if left side too small
+              safeX = Math.max(shipRight + 20, Math.random() * (CANVAS_WIDTH - OB_WIDTH - (shipRight + 20)) + (shipRight + 20));
+            }
+          }
+          
+          obsts.current.push({ 
+            x: Math.min(safeX, CANVAS_WIDTH - OB_WIDTH), // Ensure within bounds
+            y: fromTop ? -OB_HEIGHT : CANVAS_HEIGHT, 
+            w: OB_WIDTH, 
+            h: OB_HEIGHT, 
+            skin: type,
+            isIndestructible,
+            direction: 'vertical',
+            speed: fromTop ? (2 + score.current * 0.001) : -(2 + score.current * 0.001)
+          });
+        } else {
+          // Regular horizontal spawn with safe zone consideration
+          let safeY;
+          const shipTop = ship.current.y;
+          const shipBottom = ship.current.y + SHIP_HEIGHT;
+          const safeZoneHeight = 60; // 30px buffer above and below ship
+          
+          // Choose spawn position avoiding immediate ship area
+          if (Math.random() > 0.5) {
+            // Spawn above safe zone
+            const topSpace = Math.max(0, shipTop - 30);
+            if (topSpace > OB_HEIGHT) {
+              safeY = Math.random() * (topSpace - OB_HEIGHT);
+            } else {
+              // Fallback to below safe zone
+              safeY = Math.max(shipBottom + 30, Math.random() * (CANVAS_HEIGHT - OB_HEIGHT - (shipBottom + 30)) + (shipBottom + 30));
+            }
+          } else {
+            // Spawn below safe zone
+            const bottomSpace = CANVAS_HEIGHT - (shipBottom + 30);
+            if (bottomSpace > OB_HEIGHT) {
+              safeY = Math.max(shipBottom + 30, Math.random() * (bottomSpace - OB_HEIGHT) + (shipBottom + 30));
+            } else {
+              // Fallback to above safe zone
+              const topSpace = Math.max(0, shipTop - 30);
+              safeY = Math.random() * (topSpace - OB_HEIGHT);
+            }
+          }
+          
+          obsts.current.push({ 
+            x: CANVAS_WIDTH, 
+            y: Math.max(0, Math.min(safeY, CANVAS_HEIGHT - OB_HEIGHT)), // Ensure within bounds
+            w: OB_WIDTH, 
+            h: OB_HEIGHT, 
+            skin: type,
+            isIndestructible,
+            direction: 'horizontal',
+            speed: -(GAME_SPEED + 0.003 * score.current)
+          });
+        }
       }
       if (KEY_UP.some((k) => keys.current.has(k))) ship.current.y = Math.max(0, ship.current.y - 4);
       if (KEY_DOWN.some((k) => keys.current.has(k))) ship.current.y = Math.min(CANVAS_HEIGHT - SHIP_HEIGHT, ship.current.y + 4);
 
-      // Lasers
-      if (KEY_SHOOT.some((k) => keys.current.has(k)) && frame.current % 10 === 0) {
+      // Update laser cooldown
+      if (laserCooldown.current > 0) {
+        laserCooldown.current--;
+      }
+
+      // Lasers with cooldown and limit
+      if (KEY_SHOOT.some((k) => keys.current.has(k)) && 
+          laserCooldown.current === 0 && 
+          lasers.current.length < maxLasersOnScreen.current) {
+        
         lasers.current.push({
           x: ship.current.x + SHIP_WIDTH,
           y: ship.current.y + SHIP_HEIGHT / 2 - LASER_HEIGHT / 2,
           w: LASER_WIDTH,
           h: LASER_HEIGHT,
         });
+        
+        // Set cooldown (20 frames = ~0.33 seconds at 60fps)
+        laserCooldown.current = 20;
+        
+        // Play laser sound effect
+        if (laserSound.current) {
+          laserSound.current.currentTime = 0;
+          laserSound.current.play().catch(e => console.log('Audio play failed:', e));
+        }
       }
       lasers.current.forEach((l) => (l.x += LASER_SPEED));
       lasers.current = lasers.current.filter((l) => l.x < CANVAS_WIDTH);
 
       // Obstacle movement
-      obsts.current.forEach((o) => (o.x -= GAME_SPEED + 0.003 * score.current));
+      obsts.current.forEach((o) => {
+        if (o.direction === 'vertical') {
+          o.y += o.speed;
+        } else {
+          o.x += o.speed;
+        }
+      });
 
       // Star movement
       stars.current.forEach((star) => {
@@ -149,20 +269,39 @@ export default function SpaceRunner() {
           paused.current = true;
           setGameState('gameover');
           setFinalScore(score.current);
+          
+          // Play game over sound effect
+          if (gameOverSound.current) {
+            gameOverSound.current.currentTime = 0;
+            gameOverSound.current.play().catch(e => console.log('Audio play failed:', e));
+          }
+          
           break;
         }
         for (let j = lasers.current.length - 1; j >= 0; j--) {
           const lz = lasers.current[j];
           if (rectsOverlap(lz, ob)) {
-            obsts.current.splice(i, 1);
-            lasers.current.splice(j, 1);
-            score.current += 50;
-            break;
+            if (!ob.isIndestructible) {
+              obsts.current.splice(i, 1);
+              lasers.current.splice(j, 1);
+              score.current += 50;
+              break;
+            } else {
+              // Remove laser but keep indestructible obstacle
+              lasers.current.splice(j, 1);
+              break;
+            }
           }
         }
       }
 
-      obsts.current = obsts.current.filter((o) => o.x + o.w > 0);
+      obsts.current = obsts.current.filter((o) => {
+        if (o.direction === 'vertical') {
+          return o.y > -OB_HEIGHT && o.y < CANVAS_HEIGHT + OB_HEIGHT;
+        } else {
+          return o.x + o.w > 0;
+        }
+      });
 
       if (frame.current % 6 === 0) {
         score.current += 1;
@@ -222,10 +361,15 @@ export default function SpaceRunner() {
       const angle = Math.sin((frame.current + ob.x) / 30) * 0.15;
       ctx.rotate(angle);
       const bounce = Math.sin(frame.current / 18 + ob.x / 40) * 2;
-      if (obstacleImg.current.complete && obstacleImg.current.naturalWidth) {
-        ctx.drawImage(obstacleImg.current, -ob.w / 2, -ob.h / 2 + bounce, ob.w, ob.h);
+      
+      // Choose the appropriate image based on obstacle type
+      const imageToUse = ob.isIndestructible ? obstructionImg.current : obstacleImg.current;
+      
+      if (imageToUse && imageToUse.complete && imageToUse.naturalWidth) {
+        ctx.drawImage(imageToUse, -ob.w / 2, -ob.h / 2 + bounce, ob.w, ob.h);
       } else {
-        ctx.fillStyle = '#aaa';
+        // Fallback colors
+        ctx.fillStyle = ob.isIndestructible ? '#f44' : '#aaa';
         ctx.fillRect(-ob.w / 2, -ob.h / 2 + bounce, ob.w, ob.h);
       }
       ctx.restore();
@@ -236,6 +380,27 @@ export default function SpaceRunner() {
     ctx.font = '12px "Pixelify Sans", monospace';
     ctx.textAlign = 'right';
     ctx.fillText(`Score: ${score.current}`, CANVAS_WIDTH - 12, 20);
+    
+    // Laser count and cooldown indicator
+    ctx.fillText(`Lasers: ${lasers.current.length}/${maxLasersOnScreen.current}`, CANVAS_WIDTH - 12, 35);
+    
+    // Cooldown bar near ship
+    if (laserCooldown.current > 0) {
+      const barWidth = 30;
+      const barHeight = 4;
+      const barX = ship.current.x + SHIP_WIDTH / 2 - barWidth / 2;
+      const barY = ship.current.y - 10;
+      
+      // Background bar
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+      ctx.fillRect(barX, barY, barWidth, barHeight);
+      
+      // Cooldown progress
+      const progress = (20 - laserCooldown.current) / 20;
+      ctx.fillStyle = progress < 0.5 ? '#f44' : '#4f4';
+      ctx.fillRect(barX, barY, barWidth * progress, barHeight);
+    }
+    
     ctx.textAlign = 'start';
 
     // Overlay screens inside the loop
@@ -285,6 +450,7 @@ export default function SpaceRunner() {
     score.current = 0;
     frame.current = 0;
     paused.current = false;
+    laserCooldown.current = 0; // Reset laser cooldown
     ship.current.y = CANVAS_HEIGHT / 2 - SHIP_HEIGHT / 2;
     setGameState('playing');
     setFinalScore(0);
