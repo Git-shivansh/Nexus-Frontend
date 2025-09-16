@@ -171,7 +171,7 @@ const Navbar = ({
 
       {/* Mobile dropdown menu */}
       {mobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-transparent dark:bg-gray-900 shadow-md rounded-b-lg flex flex-col p-4 md:hidden z-50">
+        <div className="absolute top-full left-0 w-full bg-white dark:bg-gray-900 shadow-md rounded-b-lg flex flex-col p-4 md:hidden z-50">
           <NavLink
             to="/"
             end

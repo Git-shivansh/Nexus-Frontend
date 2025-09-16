@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { FiChevronDown, FiChevronUp, FiFileText, FiExternalLink, FiCheck } from "react-icons/fi";
 import { useDropzone } from "react-dropzone";
 import Footer from "./Footer";
+import Lottie from "lottie-react";
+import Robot from "../assets/Robot.json";
+
 // Efficient drag-and-drop file upload using react-dropzone
 function FileDropZone({ onFileAccepted }) {
   const { getRootProps, getInputProps, acceptedFiles, isDragActive } =
@@ -708,6 +711,16 @@ const ExamVault = () => {
           {loading ? (
             <div className="flex justify-center items-center py-8">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-orange-500"></div>
+            </div>
+          ) : examPapers.length === 0 ? (
+            <div className="py-10 sm:py-12 flex flex-col items-center justify-center text-center">
+              <div className="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 mb-4 sm:mb-6 select-none pointer-events-none" aria-hidden="true">
+                <Lottie animationData={Robot} loop autoplay style={{ width: "100%", height: "100%" }} />
+              </div>
+              <p className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-100">No results found</p>
+              <p className="mt-1 text-sm sm:text-base text-gray-600 dark:text-gray-400 max-w-md">
+                Try adjusting Semester, Branch, Exam Type, or Year to discover papers.
+              </p>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
