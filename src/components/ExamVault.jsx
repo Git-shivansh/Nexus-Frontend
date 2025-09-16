@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FiChevronDown, FiChevronUp, FiFileText, FiExternalLink, FiCheck } from "react-icons/fi";
 import { useDropzone } from "react-dropzone";
 import Footer from "./Footer";
 // Efficient drag-and-drop file upload using react-dropzone
@@ -95,6 +96,7 @@ function FileDropZone({ onFileAccepted }) {
 }
 
 const ExamVault = () => {
+  const FILTERS_STORAGE_KEY = "examVaultFilters";
   const [showSemesterDropdown, setShowSemesterDropdown] = useState(false);
   const [showYearDropdown, setShowYearDropdown] = useState(false); // page-level year dropdown
   const [showUploadYearDropdown, setShowUploadYearDropdown] = useState(false); // upload form year dropdown
@@ -107,10 +109,20 @@ const ExamVault = () => {
   const uploadYearDropdownRef = React.useRef(null); // upload form year dropdown ref
   const branchDropdownRef = React.useRef(null);
   const typeDropdownRef = React.useRef(null);
-  const [selectedSemester, setSelectedSemester] = useState("I");
-  const [selectedBranch, setBranch] = useState("CSE");
-  const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedExamType, setSelectedExamType] = useState("Mid Sem");
+  const loadSavedFilters = () => {
+    try {
+      const raw = localStorage.getItem(FILTERS_STORAGE_KEY);
+      if (!raw) return {};
+      const saved = JSON.parse(raw);
+      return saved && typeof saved === "object" ? saved : {};
+    } catch {
+      return {};
+    }
+  };
+  const [selectedSemester, setSelectedSemester] = useState(() => loadSavedFilters().semester || "I");
+  const [selectedBranch, setBranch] = useState(() => loadSavedFilters().branch || "CSE");
+  const [selectedYear, setSelectedYear] = useState(() => String(loadSavedFilters().year || "2024"));
+  const [selectedExamType, setSelectedExamType] = useState(() => loadSavedFilters().examType || "Mid Sem");
   const [examPapers, setExamPapers] = useState([]);
   const [allPapers, setAllPapers] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -124,6 +136,18 @@ const ExamVault = () => {
     branch: "CSE",
   });
   const [uploadFile, setUploadFile] = useState(null);
+  // Save filters to localStorage whenever they change
+  useEffect(() => {
+    try {
+      const payload = {
+        semester: selectedSemester,
+        branch: selectedBranch,
+        year: selectedYear,
+        examType: selectedExamType,
+      };
+      localStorage.setItem(FILTERS_STORAGE_KEY, JSON.stringify(payload));
+    } catch {}
+  }, [selectedSemester, selectedBranch, selectedYear, selectedExamType]);
   // ...existing code...
   // Close dropdowns when clicking outside
   useEffect(() => {
@@ -240,27 +264,20 @@ const ExamVault = () => {
         href={paper.fileUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-3 md:p-4 hover:shadow-lg transition-all duration-300 cursor-pointer hover:from-red-100 hover:to-red-200 border-2 border-red-300 hover:border-red-400 flex flex-col items-center justify-center gap-2"
+        className="group relative rounded-xl p-4 md:p-5 transition-all duration-300 cursor-pointer flex flex-col items-center justify-center gap-2 border bg-gradient-to-br from-red-50 to-red-100 hover:from-red-100 hover:to-red-200 border-red-200 hover:border-red-300 shadow-sm hover:shadow-md dark:from-red-900/20 dark:to-red-900/10 dark:hover:from-red-900/30 dark:hover:to-red-900/20 dark:border-red-900/30 dark:hover:border-red-800/50 backdrop-blur-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/60"
       >
-        <div className="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 mb-2 bg-red-200 rounded-full flex items-center justify-center">
-          {/* PDF Icon */}
-          <svg
-            className="w-6 h-6 md:w-8 md:h-8 text-red-600"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              fillRule="evenodd"
-              d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-              clipRule="evenodd"
-            />
-          </svg>
+        <FiExternalLink
+          className="absolute top-2 right-2 h-4 w-4 text-red-400/0 group-hover:text-red-500 transition-colors duration-200 dark:text-red-400/0 dark:group-hover:text-red-300"
+          aria-hidden="true"
+        />
+        <div className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 mb-2 rounded-full flex items-center justify-center bg-red-200 text-red-600 dark:bg-red-900/40 dark:text-red-300">
+          <FiFileText className="w-6 h-6 md:w-7 md:h-7" aria-hidden="true" />
         </div>
         <div className="flex flex-col items-center justify-center w-full">
-          <div className="font-bold text-base text-gray-800 mb-1 text-center">
+          <div className="font-extrabold tracking-tight text-base md:text-lg text-gray-800 dark:text-gray-100 mb-1 text-center">
             {paper.subjectCode}
           </div>
-          <div className="text-sm text-gray-700 font-medium text-center mb-1">
+          <div className="text-sm md:text-[15px] text-gray-700 dark:text-gray-300 font-medium text-center mb-1">
             {paper.subjectName}
           </div>
         </div>
@@ -411,10 +428,16 @@ const ExamVault = () => {
                           className="w-full flex items-center justify-between rounded-md border border-gray-200 dark:border-zinc-600 px-3 py-1 text-sm bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-orange-100 dark:focus:ring-orange-900 focus:border-orange-400 mb-2 transition-colors duration-150 hover:border-orange-300 hover:bg-orange-50/30 dark:hover:bg-orange-900/30 text-gray-900 dark:text-gray-100"
                           onClick={() => setShowUploadYearDropdown((prev) => !prev)}
                           tabIndex={0}
+                          aria-haspopup="listbox"
+                          aria-expanded={showUploadYearDropdown}
                         >
                           <span>{uploadForm.year}</span>
-                          <span className="flex items-center justify-center h-full">
-                            <img src="/down.svg" alt="Dropdown arrow" className="w-2 h-2 text-gray-200" />
+                          <span className="flex items-center justify-center h-full text-gray-500 dark:text-gray-300">
+                            {showUploadYearDropdown ? (
+                              <FiChevronUp className="h-4 w-4" aria-hidden="true" />
+                            ) : (
+                              <FiChevronDown className="h-4 w-4" aria-hidden="true" />
+                            )}
                           </span>
                         </button>
                         {showUploadYearDropdown && (
@@ -423,13 +446,15 @@ const ExamVault = () => {
                               <button
                                 key={year}
                                 type="button"
-                                className={`w-full text-left px-3 text-sm hover:bg-orange-100 dark:hover:bg-orange-900 rounded-md transition-colors ${
+                                className={`w-full text-left px-3 py-1.5 text-sm hover:bg-orange-100 dark:hover:bg-orange-900 rounded-md transition-colors ${
                                   uploadForm.year === year ? "bg-orange-50 dark:bg-orange-900 font-semibold text-orange-700 dark:text-orange-300" : "text-gray-700 dark:text-gray-300"
                                 }`}
                                 onClick={() => {
                                   setUploadForm({ ...uploadForm, year });
                                   setShowUploadYearDropdown(false);
                                 }}
+                                role="option"
+                                aria-selected={uploadForm.year === year}
                               >
                                 {year}
                               </button>
@@ -530,20 +555,26 @@ const ExamVault = () => {
               <div className="bg-gradient-to-r from-blue-400 to-purple-600 text-white px-4 py-2 rounded-lg inline-block mb-4">
                 <h2 className="text-sm font-medium">Select Your Semester</h2>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {semesters.map((sem) => (
-                  <button
-                    key={sem}
-                    onClick={() => setSelectedSemester(sem)}
-                    className={`px-3 py-2 md:px-4 md:py-2 border rounded transition-colors text-sm ${
-                      selectedSemester === sem
-                        ? "bg-orange-500 text-white border-orange-500"
-                        : "bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-zinc-600 hover:bg-orange-100 dark:hover:bg-orange-900"
-                    }`}
-                  >
-                    {sem}
-                  </button>
-                ))}
+              <div className="flex flex-wrap gap-1.5 sm:gap-2" role="radiogroup" aria-label="Select semester">
+                {semesters.map((sem) => {
+                  const selected = selectedSemester === sem;
+                  const base = "px-3 py-1.5 md:px-4 md:py-2 rounded-full border text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/60 hover:scale-[1.02] active:scale-[0.98]";
+                  const active = "bg-orange-500 text-white border-orange-500 shadow-sm";
+                  const inactive = "bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-zinc-600 hover:bg-orange-50 dark:hover:bg-orange-900/40 hover:border-orange-300/70 dark:hover:border-orange-400/40";
+                  return (
+                    <button
+                      key={sem}
+                      type="button"
+                      role="radio"
+                      aria-checked={selected}
+                      onClick={() => setSelectedSemester(sem)}
+                      className={`${base} ${selected ? active : inactive}`}
+                    >
+                      {selected && <FiCheck className="inline mr-2 -ml-0.5 h-4 w-4" aria-hidden="true" />}
+                      {sem}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
@@ -552,20 +583,32 @@ const ExamVault = () => {
               <div className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-4 py-2 rounded-lg inline-block mb-4">
                 <h2 className="text-sm font-medium">Select Your Branch</h2>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {branches.map((branch) => (
-                  <button
-                    key={branch}
-                    onClick={() => setBranch(branch)}
-                    className={`px-3 py-2 md:px-4 md:py-2 border rounded transition-colors text-sm ${
-                      selectedBranch === branch
-                        ? "bg-orange-500 text-white border-orange-500"
-                        : "bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-zinc-600 hover:bg-orange-100 dark:hover:bg-orange-900"
-                    }`}
-                  >
-                    {branch}
-                  </button>
-                ))}
+              <div className="flex flex-wrap gap-1.5 sm:gap-2" role="radiogroup" aria-label="Select branch">
+                {branches.map((branch) => {
+                  const selected = selectedBranch === branch;
+                  const base = "px-3 py-1.5 md:px-4 md:py-2 rounded-full border text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/60 hover:scale-[1.02] active:scale-[0.98]";
+                  const branchActiveMap = {
+                    CSE: "bg-sky-500 text-white border-sky-500",
+                    ECE: "bg-violet-500 text-white border-violet-500",
+                    MAE: "bg-emerald-500 text-white border-emerald-500",
+                    MNC: "bg-rose-500 text-white border-rose-500",
+                  };
+                  const active = branchActiveMap[branch] || "bg-orange-500 text-white border-orange-500";
+                  const inactive = "bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-zinc-600 hover:bg-orange-50 dark:hover:bg-orange-900/40 hover:border-orange-300/70 dark:hover:border-orange-400/40";
+                  return (
+                    <button
+                      key={branch}
+                      type="button"
+                      role="radio"
+                      aria-checked={selected}
+                      onClick={() => setBranch(branch)}
+                      className={`${base} ${selected ? active : inactive}`}
+                    >
+                      {selected && <FiCheck className="inline mr-2 -ml-0.5 h-4 w-4" aria-hidden="true" />}
+                      {branch}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
@@ -574,68 +617,82 @@ const ExamVault = () => {
               <div className="bg-gradient-to-r from-green-500 to-blue-600 text-white px-4 py-2 rounded-lg inline-block mb-4">
                 <h2 className="text-sm font-medium">Select Exam Type</h2>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {examTypes.map((examType) => (
-                  <button
-                    key={examType}
-                    onClick={() => setSelectedExamType(examType)}
-                    className={`px-3 py-2 md:px-4 md:py-2 border rounded transition-colors text-sm ${
-                      selectedExamType === examType
-                        ? "bg-orange-500 text-white border-orange-500"
-                        : "bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-zinc-600 hover:bg-orange-100 dark:hover:bg-orange-900"
-                    }`}
-                  >
-                    {examType}
-                  </button>
-                ))}
+              <div className="flex flex-wrap gap-1.5 sm:gap-2" role="radiogroup" aria-label="Select exam type">
+                {examTypes.map((examType) => {
+                  const selected = selectedExamType === examType;
+                  const base = "px-3 py-1.5 md:px-4 md:py-2 rounded-full border text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/60 hover:scale-[1.02] active:scale-[0.98]";
+                  const active = "bg-orange-500 text-white border-orange-500 shadow-sm";
+                  const inactive = "bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-zinc-600 hover:bg-orange-50 dark:hover:bg-orange-900/40 hover:border-orange-300/70 dark:hover:border-orange-400/40";
+                  return (
+                    <button
+                      key={examType}
+                      type="button"
+                      role="radio"
+                      aria-checked={selected}
+                      onClick={() => setSelectedExamType(examType)}
+                      className={`${base} ${selected ? active : inactive}`}
+                    >
+                      {selected && <FiCheck className="inline mr-2 -ml-0.5 h-4 w-4" aria-hidden="true" />}
+                      {examType}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
         </div>
 
         {/* Current Selection Display */}
-        <div className="mt-8 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 text-gray-800 dark:text-gray-200">
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-8 text-sm">
-            <span>
-              <strong>Semester:</strong> {selectedSemester}
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-center text-gray-800 dark:text-gray-200">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+            <span className="inline-flex items-center gap-2">
+              <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/20 dark:text-blue-300 dark:border-blue-900/40">Semester</span>
+              <span className="font-semibold">{selectedSemester}</span>
             </span>
-            <span>
-              <strong>Branch:</strong> {selectedBranch}
+            <span className="inline-flex items-center gap-2">
+              <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-fuchsia-50 text-fuchsia-700 border border-fuchsia-200 dark:bg-fuchsia-900/20 dark:text-fuchsia-300 dark:border-fuchsia-900/40">Branch</span>
+              <span className="font-semibold">{selectedBranch}</span>
             </span>
-            <span>
-              <strong>Exam Type:</strong> {selectedExamType}
+            <span className="inline-flex items-center gap-2">
+              <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 dark:bg-emerald-900/20 dark:text-emerald-300 dark:border-emerald-900/40">Exam Type</span>
+              <span className="font-semibold">{selectedExamType}</span>
             </span>
           </div>
-          <div className="flex items-center gap-2 relative" style={{ minWidth: "120px" }}>
-            <span className="text-sm">
-              <strong>Year:</strong>
-            </span>
+          <div className="flex items-center gap-2 relative">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-50 text-amber-700 border border-amber-200 dark:bg-amber-900/20 dark:text-amber-300 dark:border-amber-900/40 text-sm">Year</span>
             <div className="relative" ref={yearDropdownRef}>
               <button
                 type="button"
-                className="w-full flex items-center justify-between rounded-md border border-gray-500 dark:border-zinc-600 px-3 py-1 text-sm bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-orange-100 dark:focus:ring-orange-900 focus:border-orange-400 mb-0 min-w-[80px] text-gray-900 dark:text-gray-100"
+                className="inline-flex items-center justify-between rounded-lg border border-gray-300 dark:border-zinc-600 px-3 h-7 text-sm bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-orange-100 dark:focus:ring-orange-900 focus:border-orange-400 text-gray-900 dark:text-gray-100 min-w-[88px]"
                 onClick={() => setShowYearDropdown((prev) => !prev)}
                 tabIndex={0}
-                style={{ minWidth: "80px" }}
+                aria-haspopup="listbox"
+                aria-expanded={showYearDropdown}
               >
                 <span>{selectedYear}</span>
-                <span className="flex items-center justify-center h-full">
-                  <img src="/down.svg" alt="Dropdown arrow" className="w-2 h-2 text-gray-200" />
+                <span className="ml-2 flex items-center text-gray-600 dark:text-gray-300">
+                  {showYearDropdown ? (
+                    <FiChevronUp className="h-4 w-4" aria-hidden="true" />
+                  ) : (
+                    <FiChevronDown className="h-4 w-4" aria-hidden="true" />
+                  )}
                 </span>
               </button>
               {showYearDropdown && (
-                <div className="absolute left-0 right-0 mt-1 z-10 bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-600 rounded-md shadow-lg">
+                <div className="absolute right-0 mt-1 z-10 w-28 bg-white dark:bg-zinc-800 border border-gray-200 dark:border-zinc-600 rounded-md shadow-lg">
                   {years.map((year) => (
                     <button
                       key={year}
                       type="button"
-                      className={`w-full text-left px-3 text-sm hover:bg-orange-100 dark:hover:bg-orange-900 rounded-md transition-colors ${
+                      className={`w-full text-left px-3 py-1.5 text-sm hover:bg-orange-100 dark:hover:bg-orange-900 rounded-md transition-colors ${
                         selectedYear === year ? "bg-orange-50 dark:bg-orange-900 font-semibold text-orange-700 dark:text-orange-300" : "text-gray-700 dark:text-gray-300"
                       }`}
                       onClick={() => {
                         setSelectedYear(year);
                         setShowYearDropdown(false);
                       }}
+                      role="option"
+                      aria-selected={selectedYear === year}
                     >
                       {year}
                     </button>

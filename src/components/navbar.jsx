@@ -10,6 +10,7 @@ const Navbar = ({
   darkMode,
   toggleDarkMode,
 }) => {
+  const FEEDBACK_FORM_URL = "https://forms.gle/Utg4L6Dn33GiBM2v7";
   const location = useLocation();
   const containerRef = useRef(null);
   const homeRef = useRef(null);
@@ -93,17 +94,15 @@ const Navbar = ({
         >
           Exam Vault
         </NavLink>
-        <NavLink
-          to="/feedback"
+        <a
+          href={FEEDBACK_FORM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           ref={feedbackRef}
-          className={({ isActive }) =>
-            `relative z-10 text-sm px-6 py-2 rounded-full font-medium cursor-pointer transition-colors duration-300 ${
-              isActive ? activeConfigs["/feedback"].text : inactiveText
-            }`
-          }
+          className={`relative z-10 text-sm px-6 py-2 rounded-full font-medium cursor-pointer transition-colors duration-300 ${inactiveText}`}
         >
           Feedback
-        </NavLink>
+        </a>
       </div>
 
       {/* Right: Dark mode toggle + User Menu */}
@@ -196,17 +195,15 @@ const Navbar = ({
           >
             Exam Vault
           </NavLink>
-          <NavLink
-            to="/feedback"
+          <a
+            href={FEEDBACK_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMobileMenuOpen(false)}
-            className={({ isActive }) =>
-              `py-2 text-sm font-medium ${
-                isActive ? `${activeConfigs["/feedback"].bg} text-white rounded-md px-3` : inactiveText
-              }`
-            }
+            className={`py-2 text-sm font-medium ${inactiveText}`}
           >
             Feedback
-          </NavLink>
+          </a>
 
           <div className="border-t my-2 dark:border-gray-700"></div>
 
