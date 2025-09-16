@@ -432,7 +432,7 @@
   {
     "id": 44,
     "subjectCode": "ME301",
-    "subjectName": "Dynamics Of Machinery",
+    "subjectName": "Test Dynamics Of Machinery",
     "type": "Mid Sem",
     "semester": 5,
     "year": 2024,
@@ -1052,7 +1052,7 @@
   {
     "id": 106,
     "subjectCode": "MA201",
-    "subjectName": "MATHS",
+    "subjectName": "Engineering Mathematics III",
     "type": "End Sem",
     "semester": 3,
     "year": 2024,
@@ -1331,13 +1331,13 @@
   },
   {
     "id": 134,
-    "subjectCode": "EC304",
-    "subjectName": "IOT",
+    "subjectCode": "CS203",
+    "subjectName": "OOPS",
     "type": "End Sem",
-    "semester": 5,
-    "year": 2023,
+    "semester": 3,
+    "year": 2024,
     "branch": "ECE",
-    "fileUrl": "https://drive.google.com/open?id=1GyfvhpqSbIXh0R_gw0eD4kyAr7gJtnli"
+    "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
     "id": 135,
@@ -1346,7 +1346,7 @@
     "type": "End Sem",
     "semester": 3,
     "year": 2024,
-    "branch": "ECE",
+    "branch": "CSE",
     "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
@@ -1356,21 +1356,11 @@
     "type": "End Sem",
     "semester": 3,
     "year": 2024,
-    "branch": "CSE",
-    "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
-  },
-  {
-    "id": 137,
-    "subjectCode": "CS203",
-    "subjectName": "OOPS",
-    "type": "End Sem",
-    "semester": 3,
-    "year": 2024,
     "branch": "MNC",
     "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
-    "id": 138,
+    "id": 137,
     "subjectCode": "CS201",
     "subjectName": "Design Analysis and Algorithm",
     "type": "End Sem",
@@ -1380,7 +1370,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lmczUxf81axuOZ8jeMAohc8F_dPNv6Wp"
   },
   {
-    "id": 139,
+    "id": 138,
     "subjectCode": "CS202",
     "subjectName": "Discrete Mathematics",
     "type": "End Sem",
@@ -1390,7 +1380,7 @@
     "fileUrl": "https://drive.google.com/open?id=1hrJp-E3x9Qgchc1miCb9QMDYdXk2oEW0"
   },
   {
-    "id": 140,
+    "id": 139,
     "subjectCode": "CS207",
     "subjectName": "Computer Organization and Architecture",
     "type": "End Sem",
@@ -1400,7 +1390,7 @@
     "fileUrl": "https://drive.google.com/open?id=1VHaeFqD4iY0dm6odgKiNc1iUUIfh6kZc"
   },
   {
-    "id": 141,
+    "id": 140,
     "subjectCode": "CS207",
     "subjectName": "Computer Organization and Architecture",
     "type": "Mid Sem",
@@ -1410,7 +1400,7 @@
     "fileUrl": "https://drive.google.com/open?id=10iXMJLUDM3U7ddhXS4lAMZwMX39JYtHv"
   },
   {
-    "id": 142,
+    "id": 141,
     "subjectCode": "MA201",
     "subjectName": "Engineering Mathematics",
     "type": "Mid Sem",
@@ -1420,7 +1410,7 @@
     "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
-    "id": 143,
+    "id": 142,
     "subjectCode": "MA201",
     "subjectName": "Engineering Mathematics",
     "type": "Mid Sem",
@@ -1430,7 +1420,7 @@
     "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
-    "id": 144,
+    "id": 143,
     "subjectCode": "MA201",
     "subjectName": "Engineering Mathematics",
     "type": "Mid Sem",
@@ -1440,7 +1430,7 @@
     "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
-    "id": 145,
+    "id": 144,
     "subjectCode": "MA201",
     "subjectName": "MATHS",
     "type": "End Sem",
@@ -1450,7 +1440,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lqbzeHSxM-klEAoIkBvqbQucb86k9fAo"
   },
   {
-    "id": 146,
+    "id": 145,
     "subjectCode": "MA201",
     "subjectName": "MATHS",
     "type": "End Sem",
@@ -1460,7 +1450,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lqbzeHSxM-klEAoIkBvqbQucb86k9fAo"
   },
   {
-    "id": 147,
+    "id": 146,
     "subjectCode": "MA201",
     "subjectName": "MATHS",
     "type": "End Sem",
