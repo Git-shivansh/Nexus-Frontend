@@ -29,10 +29,10 @@ const Footer = () => (
         <div className="flex flex-col items-center sm:items-end gap-6 w-full">
           <div className="text-center sm:text-right w-full">
             <span className="font-semibold text-orange-600 text-xs tracking-wide uppercase">
-              Total Viewers
+              Total Visits
             </span>
             <div className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-800 dark:text-gray-200 mt-1">
-              121
+              1307
             </div>
           </div>
           <div className="text-center sm:text-right w-full">
