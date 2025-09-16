@@ -273,7 +273,7 @@ const ExamVault = () => {
           <FiFileText className="w-6 h-6 md:w-7 md:h-7" aria-hidden="true" />
         </div>
         <div className="flex flex-col items-center justify-center w-full">
-          <div className="font-extrabold tracking-tight text-base md:text-lg text-gray-800 mb-1 text-center">
+          <div className="font-bold tracking-tight text-base md:text-lg text-gray-800 mb-1 text-center">
             {paper.subjectCode}
           </div>
           <div className="text-sm md:text-[15px] text-gray-700 font-medium text-center mb-1">
