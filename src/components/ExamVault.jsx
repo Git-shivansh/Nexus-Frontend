@@ -267,20 +267,16 @@ const ExamVault = () => {
         href={paper.fileUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="group relative rounded-xl p-4 md:p-5 transition-all duration-300 cursor-pointer flex flex-col items-center justify-center gap-2 border bg-gradient-to-br from-red-50 to-red-100 hover:from-red-100 hover:to-red-200 border-red-200 hover:border-red-300 shadow-sm hover:shadow-md dark:from-red-900/20 dark:to-red-900/10 dark:hover:from-red-900/30 dark:hover:to-red-900/20 dark:border-red-900/30 dark:hover:border-red-800/50 backdrop-blur-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/60"
-      >
-        <FiExternalLink
-          className="absolute top-2 right-2 h-4 w-4 text-red-400/0 group-hover:text-red-500 transition-colors duration-200 dark:text-red-400/0 dark:group-hover:text-red-300"
-          aria-hidden="true"
-        />
-        <div className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 mb-2 rounded-full flex items-center justify-center bg-red-200 text-red-600 dark:bg-red-900/40 dark:text-red-300">
+        className="group relative rounded-xl p-4 md:p-5 transition-all duration-300 cursor-pointer flex flex-col items-center justify-center gap-2 border bg-gradient-to-br from-red-50 to-red-100 hover:from-red-100 hover:to-red-200 border-red-300 hover:border-red-300 shadow-sm hover:shadow-md backdrop-blur-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/60"
+      >       
+        <div className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 mb-2 rounded-full flex items-center justify-center bg-red-200 text-red-600">
           <FiFileText className="w-6 h-6 md:w-7 md:h-7" aria-hidden="true" />
         </div>
         <div className="flex flex-col items-center justify-center w-full">
-          <div className="font-extrabold tracking-tight text-base md:text-lg text-gray-800 dark:text-gray-100 mb-1 text-center">
+          <div className="font-extrabold tracking-tight text-base md:text-lg text-gray-800 mb-1 text-center">
             {paper.subjectCode}
           </div>
-          <div className="text-sm md:text-[15px] text-gray-700 dark:text-gray-300 font-medium text-center mb-1">
+          <div className="text-sm md:text-[15px] text-gray-700 font-medium text-center mb-1">
             {paper.subjectName}
           </div>
         </div>
