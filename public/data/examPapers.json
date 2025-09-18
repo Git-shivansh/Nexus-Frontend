@@ -1301,6 +1301,26 @@
   },
   {
     "id": 131,
+    "subjectCode": "MA201",
+    "subjectName": "ENGINEERING MATHEMATICS III",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1xInZ_yB2UT6x27-6_IYQfJvpHibc27Ug"
+  },
+  {
+    "id": 132,
+    "subjectCode": "MA201",
+    "subjectName": "ENGINEERING MATHEMATICS III",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2023,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1xInZ_yB2UT6x27-6_IYQfJvpHibc27Ug"
+  },
+  {
+    "id": 133,
     "subjectCode": "HS201",
     "subjectName": "MANAGEMENT CONCEPT",
     "type": "Mid Sem",
@@ -1310,7 +1330,7 @@
     "fileUrl": "https://drive.google.com/open?id=1ac8CMWl8pPLOsPd-GOLtISznEWkz0xR2"
   },
   {
-    "id": 132,
+    "id": 134,
     "subjectCode": "CS207",
     "subjectName": "COMPUTER ORGANISATION AND ARCHITECTURE",
     "type": "Mid Sem",
@@ -1320,7 +1340,7 @@
     "fileUrl": "https://drive.google.com/open?id=12dRyXNpi1cFiog8C5PSSwRMrIAWc4H3i"
   },
   {
-    "id": 133,
+    "id": 135,
     "subjectCode": "CS201",
     "subjectName": "DESIGN AND ANALYSIS OF ALGORITHM",
     "type": "Mid Sem",
@@ -1330,7 +1350,7 @@
     "fileUrl": "https://drive.google.com/open?id=1bhbVkyzeX7HKSzXN-dBDUTapNP6XNxKZ"
   },
   {
-    "id": 134,
+    "id": 136,
     "subjectCode": "CS202",
     "subjectName": "DISCRETE MATHEMATICS",
     "type": "Mid Sem",
@@ -1340,7 +1360,7 @@
     "fileUrl": "https://drive.google.com/open?id=1qL5jC2YJC8DILF1o3Gtcg23u9yEq7rqn"
   },
   {
-    "id": 135,
+    "id": 137,
     "subjectCode": "CS203",
     "subjectName": "OBJECT ORIENTED PROGRAMMING",
     "type": "Mid Sem",
@@ -1350,7 +1370,7 @@
     "fileUrl": "https://drive.google.com/open?id=1thlvbK_GR-agYMRB9uZdEfqPTSRO6pYk"
   },
   {
-    "id": 136,
+    "id": 138,
     "subjectCode": "HS201",
     "subjectName": "MANAGEMENT CONCEPT",
     "type": "Mid Sem",
@@ -1360,7 +1380,7 @@
     "fileUrl": "https://drive.google.com/open?id=1ac8CMWl8pPLOsPd-GOLtISznEWkz0xR2"
   },
   {
-    "id": 137,
+    "id": 139,
     "subjectCode": "HS201",
     "subjectName": "MANAGEMENT CONCEPT",
     "type": "Mid Sem",
@@ -1370,7 +1390,7 @@
     "fileUrl": "https://drive.google.com/open?id=1ac8CMWl8pPLOsPd-GOLtISznEWkz0xR2"
   },
   {
-    "id": 138,
+    "id": 140,
     "subjectCode": "HS201",
     "subjectName": "MANAGEMENT CONCEPT",
     "type": "Mid Sem",
@@ -1380,7 +1400,7 @@
     "fileUrl": "https://drive.google.com/open?id=1ac8CMWl8pPLOsPd-GOLtISznEWkz0xR2"
   },
   {
-    "id": 139,
+    "id": 141,
     "subjectCode": "CS207",
     "subjectName": "COMPUTER ORGANISATION AND ARCHITECTURE",
     "type": "Mid Sem",
@@ -1390,7 +1410,7 @@
     "fileUrl": "https://drive.google.com/open?id=12dRyXNpi1cFiog8C5PSSwRMrIAWc4H3i"
   },
   {
-    "id": 140,
+    "id": 142,
     "subjectCode": "CS201",
     "subjectName": "DESIGN AND ANALYSIS OF ALGORITHM",
     "type": "Mid Sem",
@@ -1400,7 +1420,7 @@
     "fileUrl": "https://drive.google.com/open?id=1bhbVkyzeX7HKSzXN-dBDUTapNP6XNxKZ"
   },
   {
-    "id": 141,
+    "id": 143,
     "subjectCode": "CS202",
     "subjectName": "DISCRETE MATHEMATICS",
     "type": "Mid Sem",
@@ -1410,7 +1430,7 @@
     "fileUrl": "https://drive.google.com/open?id=1qL5jC2YJC8DILF1o3Gtcg23u9yEq7rqn"
   },
   {
-    "id": 142,
+    "id": 144,
     "subjectCode": "CS203",
     "subjectName": "OBJECT ORIENTED PROGRAMMING",
     "type": "Mid Sem",
@@ -1420,7 +1440,7 @@
     "fileUrl": "https://drive.google.com/open?id=1thlvbK_GR-agYMRB9uZdEfqPTSRO6pYk"
   },
   {
-    "id": 143,
+    "id": 145,
     "subjectCode": "ME102",
     "subjectName": "ENGINEERING DRAWING QUIZ",
     "type": "Mid Sem",
@@ -1430,7 +1450,7 @@
     "fileUrl": "https://drive.google.com/open?id=1RhHUKEzP2r93FaU3sNIauR5QZ7wYp0ZF"
   },
   {
-    "id": 144,
+    "id": 146,
     "subjectCode": "EC301",
     "subjectName": "DIGITAL SIGNAL",
     "type": "End Sem",
@@ -1440,7 +1460,7 @@
     "fileUrl": "https://drive.google.com/open?id=1LTY1SDSozbhxbLzTMQlgfTnRFUFo2R-9"
   },
   {
-    "id": 145,
+    "id": 147,
     "subjectCode": "CS203",
     "subjectName": "OOPS",
     "type": "End Sem",
@@ -1450,7 +1470,7 @@
     "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
-    "id": 146,
+    "id": 148,
     "subjectCode": "CS203",
     "subjectName": "OOPS",
     "type": "End Sem",
@@ -1460,7 +1480,7 @@
     "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
-    "id": 147,
+    "id": 149,
     "subjectCode": "CS203",
     "subjectName": "OOPS",
     "type": "End Sem",
@@ -1470,7 +1490,7 @@
     "fileUrl": "https://drive.google.com/open?id=1NEb5WTzkoCKbC1-vpTROQYsF7KRm-n-S"
   },
   {
-    "id": 148,
+    "id": 150,
     "subjectCode": "CS207",
     "subjectName": "Computer Organization and Architecture",
     "type": "Mid Sem",
@@ -1480,7 +1500,7 @@
     "fileUrl": "https://drive.google.com/open?id=10iXMJLUDM3U7ddhXS4lAMZwMX39JYtHv"
   },
   {
-    "id": 149,
+    "id": 151,
     "subjectCode": "CS207",
     "subjectName": "Computer Organization and Architecture",
     "type": "End Sem",
@@ -1490,7 +1510,7 @@
     "fileUrl": "https://drive.google.com/open?id=1VHaeFqD4iY0dm6odgKiNc1iUUIfh6kZc"
   },
   {
-    "id": 150,
+    "id": 152,
     "subjectCode": "CS207",
     "subjectName": "Computer Organization and Architecture",
     "type": "Mid Sem",
@@ -1500,7 +1520,7 @@
     "fileUrl": "https://drive.google.com/open?id=10iXMJLUDM3U7ddhXS4lAMZwMX39JYtHv"
   },
   {
-    "id": 151,
+    "id": 153,
     "subjectCode": "MA201",
     "subjectName": "Engineering Mathematics",
     "type": "Mid Sem",
@@ -1510,7 +1530,7 @@
     "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
-    "id": 152,
+    "id": 154,
     "subjectCode": "MA201",
     "subjectName": "Engineering Mathematics",
     "type": "Mid Sem",
@@ -1520,7 +1540,7 @@
     "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
-    "id": 153,
+    "id": 155,
     "subjectCode": "MA201",
     "subjectName": "Engineering Mathematics",
     "type": "Mid Sem",
@@ -1530,7 +1550,7 @@
     "fileUrl": "https://drive.google.com/open?id=1gW2IVerjWTxOWVbDyW5blcnzlNla1PWs"
   },
   {
-    "id": 154,
+    "id": 156,
     "subjectCode": "MA201",
     "subjectName": "MATHS",
     "type": "End Sem",
@@ -1540,7 +1560,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lqbzeHSxM-klEAoIkBvqbQucb86k9fAo"
   },
   {
-    "id": 155,
+    "id": 157,
     "subjectCode": "MA201",
     "subjectName": "MATHS",
     "type": "End Sem",
@@ -1550,7 +1570,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lqbzeHSxM-klEAoIkBvqbQucb86k9fAo"
   },
   {
-    "id": 156,
+    "id": 158,
     "subjectCode": "MA201",
     "subjectName": "MATHS",
     "type": "End Sem",
@@ -1560,7 +1580,7 @@
     "fileUrl": "https://drive.google.com/open?id=1lqbzeHSxM-klEAoIkBvqbQucb86k9fAo"
   },
   {
-    "id": 157,
+    "id": 159,
     "subjectCode": "ME102",
     "subjectName": "ENGINEERING DRAWING",
     "type": "Mid Sem",
@@ -1570,33 +1590,13 @@
     "fileUrl": "https://drive.google.com/open?id=1r_DNr6gIn8e1xOxnrw-prTYlciNa3gmK"
   },
   {
-    "id": 158,
-    "subjectCode": "MA101",
-    "subjectName": "ENGINEERING MATH QUIZ",
-    "type": "Mid Sem",
-    "semester": 1,
-    "year": 2024,
-    "branch": "MAE",
-    "fileUrl": "https://drive.google.com/open?id=13FZM9DQEJoIJddophfUuwYa3Fpv05i5f"
-  },
-  {
-    "id": 159,
-    "subjectCode": "MA101",
-    "subjectName": "ENGINEERING MATH QUIZ",
-    "type": "Mid Sem",
-    "semester": 1,
-    "year": 2024,
-    "branch": "CSE",
-    "fileUrl": "https://drive.google.com/open?id=13FZM9DQEJoIJddophfUuwYa3Fpv05i5f"
-  },
-  {
     "id": 160,
     "subjectCode": "MA101",
     "subjectName": "ENGINEERING MATH QUIZ",
     "type": "Mid Sem",
     "semester": 1,
     "year": 2024,
-    "branch": "ECE",
+    "branch": "MAE",
     "fileUrl": "https://drive.google.com/open?id=13FZM9DQEJoIJddophfUuwYa3Fpv05i5f"
   },
   {
@@ -1606,28 +1606,28 @@
     "type": "Mid Sem",
     "semester": 1,
     "year": 2024,
-    "branch": "MNC",
+    "branch": "CSE",
     "fileUrl": "https://drive.google.com/open?id=13FZM9DQEJoIJddophfUuwYa3Fpv05i5f"
   },
   {
     "id": 162,
     "subjectCode": "MA101",
-    "subjectName": "ENGINEERING MATH",
-    "type": "End Sem",
+    "subjectName": "ENGINEERING MATH QUIZ",
+    "type": "Mid Sem",
     "semester": 1,
     "year": 2024,
-    "branch": "MAE",
-    "fileUrl": "https://drive.google.com/open?id=1lJBuOu2Kalsw0Ad5mCGFXwyu6a5aL_Td"
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=13FZM9DQEJoIJddophfUuwYa3Fpv05i5f"
   },
   {
     "id": 163,
     "subjectCode": "MA101",
-    "subjectName": "ENGINEERING MATH",
-    "type": "End Sem",
+    "subjectName": "ENGINEERING MATH QUIZ",
+    "type": "Mid Sem",
     "semester": 1,
     "year": 2024,
-    "branch": "CSE",
-    "fileUrl": "https://drive.google.com/open?id=1lJBuOu2Kalsw0Ad5mCGFXwyu6a5aL_Td"
+    "branch": "MNC",
+    "fileUrl": "https://drive.google.com/open?id=13FZM9DQEJoIJddophfUuwYa3Fpv05i5f"
   },
   {
     "id": 164,
@@ -1636,7 +1636,7 @@
     "type": "End Sem",
     "semester": 1,
     "year": 2024,
-    "branch": "ECE",
+    "branch": "MAE",
     "fileUrl": "https://drive.google.com/open?id=1lJBuOu2Kalsw0Ad5mCGFXwyu6a5aL_Td"
   },
   {
@@ -1646,11 +1646,31 @@
     "type": "End Sem",
     "semester": 1,
     "year": 2024,
-    "branch": "MNC",
+    "branch": "CSE",
     "fileUrl": "https://drive.google.com/open?id=1lJBuOu2Kalsw0Ad5mCGFXwyu6a5aL_Td"
   },
   {
     "id": 166,
+    "subjectCode": "MA101",
+    "subjectName": "ENGINEERING MATH",
+    "type": "End Sem",
+    "semester": 1,
+    "year": 2024,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1lJBuOu2Kalsw0Ad5mCGFXwyu6a5aL_Td"
+  },
+  {
+    "id": 167,
+    "subjectCode": "MA101",
+    "subjectName": "ENGINEERING MATH",
+    "type": "End Sem",
+    "semester": 1,
+    "year": 2024,
+    "branch": "MNC",
+    "fileUrl": "https://drive.google.com/open?id=1lJBuOu2Kalsw0Ad5mCGFXwyu6a5aL_Td"
+  },
+  {
+    "id": 168,
     "subjectCode": "ME103",
     "subjectName": "ENGINEERING MATERIAL",
     "type": "End Sem",
@@ -1660,33 +1680,13 @@
     "fileUrl": "https://drive.google.com/open?id=1nDRlO-AZJc81PP5J5xfaLkeKnUyW9M0C"
   },
   {
-    "id": 167,
-    "subjectCode": "HS101",
-    "subjectName": "PROFESSIONAL COMMUNICATION",
-    "type": "End Sem",
-    "semester": 1,
-    "year": 2024,
-    "branch": "MAE",
-    "fileUrl": "https://drive.google.com/open?id=1T9Yv-q2MKxd3YJK0Saz_e1uIr-QJf8W0"
-  },
-  {
-    "id": 168,
-    "subjectCode": "HS101",
-    "subjectName": "PROFESSIONAL COMMUNICATION",
-    "type": "End Sem",
-    "semester": 1,
-    "year": 2024,
-    "branch": "CSE",
-    "fileUrl": "https://drive.google.com/open?id=1T9Yv-q2MKxd3YJK0Saz_e1uIr-QJf8W0"
-  },
-  {
     "id": 169,
     "subjectCode": "HS101",
     "subjectName": "PROFESSIONAL COMMUNICATION",
     "type": "End Sem",
     "semester": 1,
     "year": 2024,
-    "branch": "ECE",
+    "branch": "MAE",
     "fileUrl": "https://drive.google.com/open?id=1T9Yv-q2MKxd3YJK0Saz_e1uIr-QJf8W0"
   },
   {
@@ -1696,28 +1696,28 @@
     "type": "End Sem",
     "semester": 1,
     "year": 2024,
-    "branch": "MNC",
+    "branch": "CSE",
     "fileUrl": "https://drive.google.com/open?id=1T9Yv-q2MKxd3YJK0Saz_e1uIr-QJf8W0"
   },
   {
     "id": 171,
-    "subjectCode": "CS302",
-    "subjectName": "SOFTWARE ENGINEERING",
-    "type": "Mid Sem",
-    "semester": 5,
-    "year": 2023,
-    "branch": "CSE",
-    "fileUrl": "https://drive.google.com/open?id=1g3h3RNM6Ch2rh2JR3r0C_hcrp28YHBGp"
-  },
-  {
-    "id": 172,
-    "subjectCode": "EC101",
-    "subjectName": "ELECTRICAL SCIENCE",
+    "subjectCode": "HS101",
+    "subjectName": "PROFESSIONAL COMMUNICATION",
     "type": "End Sem",
     "semester": 1,
     "year": 2024,
-    "branch": "MAE",
-    "fileUrl": "https://drive.google.com/open?id=1axnL3I_Tu_cubnWcWZcGdB4K8LjBUEOf"
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1T9Yv-q2MKxd3YJK0Saz_e1uIr-QJf8W0"
+  },
+  {
+    "id": 172,
+    "subjectCode": "HS101",
+    "subjectName": "PROFESSIONAL COMMUNICATION",
+    "type": "End Sem",
+    "semester": 1,
+    "year": 2024,
+    "branch": "MNC",
+    "fileUrl": "https://drive.google.com/open?id=1T9Yv-q2MKxd3YJK0Saz_e1uIr-QJf8W0"
   },
   {
     "id": 173,
@@ -1727,10 +1727,30 @@
     "semester": 5,
     "year": 2023,
     "branch": "CSE",
-    "fileUrl": "https://drive.google.com/open?id=17Z8JFji8JH-6t1CjoyqoEIZkTXl1vgk9"
+    "fileUrl": "https://drive.google.com/open?id=1g3h3RNM6Ch2rh2JR3r0C_hcrp28YHBGp"
   },
   {
     "id": 174,
+    "subjectCode": "EC101",
+    "subjectName": "ELECTRICAL SCIENCE",
+    "type": "End Sem",
+    "semester": 1,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1axnL3I_Tu_cubnWcWZcGdB4K8LjBUEOf"
+  },
+  {
+    "id": 175,
+    "subjectCode": "CS302",
+    "subjectName": "SOFTWARE ENGINEERING",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2023,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=17Z8JFji8JH-6t1CjoyqoEIZkTXl1vgk9"
+  },
+  {
+    "id": 176,
     "subjectCode": "ME101",
     "subjectName": "QUIZZ MECHANICS",
     "type": "Mid Sem",
@@ -1740,7 +1760,7 @@
     "fileUrl": "https://drive.google.com/open?id=1nmSb8cbwRP7qusNDgzSGgZtcg4CuaX0t"
   },
   {
-    "id": 175,
+    "id": 177,
     "subjectCode": "MA102",
     "subjectName": "QUIZZ MATHEMATICS II",
     "type": "Mid Sem",
@@ -1750,7 +1770,7 @@
     "fileUrl": "https://drive.google.com/open?id=11F6YPLHZytFprwNqxvOJ-oBN3fbekSEv"
   },
   {
-    "id": 176,
+    "id": 178,
     "subjectCode": "ME101",
     "subjectName": "MECHANICS",
     "type": "Mid Sem",
@@ -1760,7 +1780,7 @@
     "fileUrl": "https://drive.google.com/open?id=1hF2BD8oEza4wCoiE5Le-tj61usiYA-56"
   },
   {
-    "id": 177,
+    "id": 179,
     "subjectCode": "EC103",
     "subjectName": "BASIC ELECTRONIC",
     "type": "Mid Sem",
@@ -1770,7 +1790,7 @@
     "fileUrl": "https://drive.google.com/open?id=1OJAorZc-d0-0KLG2VbRsn54KXuQ8Wec-"
   },
   {
-    "id": 178,
+    "id": 180,
     "subjectCode": "CS106",
     "subjectName": "DSA",
     "type": "Mid Sem",
@@ -1780,7 +1800,7 @@
     "fileUrl": "https://drive.google.com/open?id=1-80EXhnf4gLjLO4UuEKn6noqipH3GgRm"
   },
   {
-    "id": 179,
+    "id": 181,
     "subjectCode": "MA102",
     "subjectName": "MATHEMATICS II",
     "type": "Mid Sem",
@@ -1790,7 +1810,7 @@
     "fileUrl": "https://drive.google.com/open?id=185QndHdGL4hfuyCV--N_5bSTmaa_BvkG"
   },
   {
-    "id": 180,
+    "id": 182,
     "subjectCode": "HA110",
     "subjectName": "INDIAN KNOWLEDGE SYSTEM",
     "type": "End Sem",
@@ -1800,7 +1820,7 @@
     "fileUrl": "https://drive.google.com/open?id=1573q4-IiajWKdth8Vagi7AYZI8ssq9KS"
   },
   {
-    "id": 181,
+    "id": 183,
     "subjectCode": "ME101",
     "subjectName": "MECHANICS",
     "type": "End Sem",
@@ -1810,7 +1830,7 @@
     "fileUrl": "https://drive.google.com/open?id=1kOuJDVgbbfFSI1V6lmLErDXBv0A9KWVj"
   },
   {
-    "id": 182,
+    "id": 184,
     "subjectCode": "MA102",
     "subjectName": "MATHEMATICS II",
     "type": "End Sem",
@@ -1820,7 +1840,7 @@
     "fileUrl": "https://drive.google.com/open?id=1w9iz7_l1SFfDUrJ3qCE4wd2ckju4rgmM"
   },
   {
-    "id": 183,
+    "id": 185,
     "subjectCode": "CS106",
     "subjectName": "DSA",
     "type": "End Sem",
@@ -1830,7 +1850,7 @@
     "fileUrl": "https://drive.google.com/open?id=14sOQtPK_Vx7zzOqrvtaz3u47Qu88g4Pe"
   },
   {
-    "id": 184,
+    "id": 186,
     "subjectCode": "EC103",
     "subjectName": "BASIC ELECTRONIC",
     "type": "End Sem",
@@ -1840,7 +1860,7 @@
     "fileUrl": "https://drive.google.com/open?id=1s-fZRnpLMcxRHn72oRCBl8dym7qbGRHS"
   },
   {
-    "id": 185,
+    "id": 187,
     "subjectCode": "ME207",
     "subjectName": "QUIZ FLUID",
     "type": "Mid Sem",
@@ -1850,7 +1870,7 @@
     "fileUrl": "https://drive.google.com/open?id=1vjyqsqGQe30mAkdk77zXyTEkKRe6e7dl"
   },
   {
-    "id": 186,
+    "id": 188,
     "subjectCode": "ME201",
     "subjectName": "QUIZ SOM",
     "type": "Mid Sem",
@@ -1860,7 +1880,7 @@
     "fileUrl": "https://drive.google.com/open?id=1nA_sLa3X0eNC45NliotpXkCky-VIEwAa"
   },
   {
-    "id": 187,
+    "id": 189,
     "subjectCode": "MA203",
     "subjectName": "PROBABILITY QUIZ",
     "type": "Mid Sem",
@@ -1868,5 +1888,55 @@
     "year": 2025,
     "branch": "MAE",
     "fileUrl": "https://drive.google.com/open?id=1iMmWuVNcv1OnSwYbjIEQG-jQwvuE2UPE"
+  },
+  {
+    "id": 190,
+    "subjectCode": "EC207",
+    "subjectName": "Analog Comm",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2023,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1pIMR0uoWVAlc6t--XEOfuC4omL_5Haio"
+  },
+  {
+    "id": 191,
+    "subjectCode": "CS203",
+    "subjectName": "OOP",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2023,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1_84v7FIsJBUkEnRS40msQ-yM8jrVGCnf"
+  },
+  {
+    "id": 192,
+    "subjectCode": "CS203",
+    "subjectName": "OOP",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2023,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1_84v7FIsJBUkEnRS40msQ-yM8jrVGCnf"
+  },
+  {
+    "id": 193,
+    "subjectCode": "EC201",
+    "subjectName": "EM THEORY ",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2023,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1eahDRUGXjH3L2CqomuwrwImFdfDT8EaP"
+  },
+  {
+    "id": 194,
+    "subjectCode": "EC209",
+    "subjectName": "EMI",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2023,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1tuRTpQ-b-_7Xm6Es_81nyVN329Hw6L5V"
   }
 ]
