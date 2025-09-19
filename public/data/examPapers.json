@@ -1938,5 +1938,45 @@
     "year": 2023,
     "branch": "ECE",
     "fileUrl": "https://drive.google.com/open?id=1tuRTpQ-b-_7Xm6Es_81nyVN329Hw6L5V"
+  },
+  {
+    "id": 195,
+    "subjectCode": "MA203",
+    "subjectName": "Probability and stats",
+    "type": "Mid Sem",
+    "semester": 4,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
+  },
+  {
+    "id": 196,
+    "subjectCode": "MA203",
+    "subjectName": "Probability and stats",
+    "type": "Mid Sem",
+    "semester": 4,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
+  },
+  {
+    "id": 197,
+    "subjectCode": "MA203",
+    "subjectName": "Probability and stats",
+    "type": "Mid Sem",
+    "semester": 4,
+    "year": 2024,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
+  },
+  {
+    "id": 198,
+    "subjectCode": "MA203",
+    "subjectName": "Probability and stats",
+    "type": "Mid Sem",
+    "semester": 4,
+    "year": 2024,
+    "branch": "MNC",
+    "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
   }
 ]
