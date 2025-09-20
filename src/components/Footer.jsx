@@ -32,7 +32,7 @@ const Footer = () => (
               Total Visits
             </span>
             <div className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-800 dark:text-gray-200 mt-1">
-              1307
+              4964
             </div>
           </div>
           <div className="text-center sm:text-right w-full">
