@@ -1911,6 +1911,46 @@
   },
   {
     "id": 192,
+    "subjectCode": "MA203",
+    "subjectName": "probability,Statistics and Random Process ",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=16twb6vXS_jIwiB4qeaE4hcddQO3dHnA1"
+  },
+  {
+    "id": 193,
+    "subjectCode": "CS301",
+    "subjectName": "DATA COMMUNICATION",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=12IJAGhqOxA1PZc4xLn-aRW1N28eLmQqS"
+  },
+  {
+    "id": 194,
+    "subjectCode": "CS303",
+    "subjectName": "AI DKC",
+    "type": "Mid Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1ohJkPT87FEbs6sanWYyu1LxJ7Ve0_FXr"
+  },
+  {
+    "id": 195,
+    "subjectCode": "CS301",
+    "subjectName": "DATA COMMUNICATION",
+    "type": "End Sem",
+    "semester": 5,
+    "year": 2024,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1q5nml-9kKpLmAmDlSQPw-iov1rZ5PoXo"
+  },
+  {
+    "id": 196,
     "subjectCode": "PH101",
     "subjectName": "Engineering Physics",
     "type": "Mid Sem",
@@ -1920,7 +1960,7 @@
     "fileUrl": "https://drive.google.com/open?id=1MpnCvRR8Wqp43wc7YyETRAWtV6SxjW5c"
   },
   {
-    "id": 193,
+    "id": 197,
     "subjectCode": "PH101",
     "subjectName": "Engineering Physics",
     "type": "Mid Sem",
@@ -1930,7 +1970,7 @@
     "fileUrl": "https://drive.google.com/open?id=1MpnCvRR8Wqp43wc7YyETRAWtV6SxjW5c"
   },
   {
-    "id": 194,
+    "id": 198,
     "subjectCode": "PH101",
     "subjectName": "Engineering Physics",
     "type": "Mid Sem",
@@ -1940,7 +1980,7 @@
     "fileUrl": "https://drive.google.com/open?id=1MpnCvRR8Wqp43wc7YyETRAWtV6SxjW5c"
   },
   {
-    "id": 195,
+    "id": 199,
     "subjectCode": "MA203",
     "subjectName": "Probability and stats",
     "type": "Mid Sem",
@@ -1950,7 +1990,7 @@
     "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
   },
   {
-    "id": 196,
+    "id": 200,
     "subjectCode": "MA203",
     "subjectName": "Probability and stats",
     "type": "Mid Sem",
@@ -1960,7 +2000,7 @@
     "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
   },
   {
-    "id": 197,
+    "id": 201,
     "subjectCode": "MA203",
     "subjectName": "Probability and stats",
     "type": "Mid Sem",
