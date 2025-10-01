@@ -1951,6 +1951,296 @@
   },
   {
     "id": 196,
+    "subjectCode": "HS401",
+    "subjectName": "Professional  ethics for engineer",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1JlpyRwHZ8vRuW1up3gGIj1pgcaFoCiJ6"
+  },
+  {
+    "id": 197,
+    "subjectCode": "ME480",
+    "subjectName": "Quality Control",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1dJs8z2Tg6ssyZtBaL9k-hm0jwUiQg7pP"
+  },
+  {
+    "id": 198,
+    "subjectCode": "ME401",
+    "subjectName": "Robotics",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2024,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=11C1CFa2ZFlHMWfaTgfcHiVo2ojmuquOR"
+  },
+  {
+    "id": 199,
+    "subjectCode": "HS402",
+    "subjectName": "Professional ethics for engineers",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=13kQf4_Vjf8dckXBGIdEgkc0M6aT8qpVA"
+  },
+  {
+    "id": 200,
+    "subjectCode": "ME451",
+    "subjectName": "Hybird and Electric Vehicle",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1c5yJKA_tjA0EL-PIVR7ZYuW1maQnW4CL"
+  },
+  {
+    "id": 201,
+    "subjectCode": "ME402",
+    "subjectName": "Robotics",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=13f6fW_8-EMEOZeDwgPyZlDoq4VtXJwBT"
+  },
+  {
+    "id": 202,
+    "subjectCode": "ME480",
+    "subjectName": "Quality Control",
+    "type": "Mid Sem",
+    "semester": 7,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1StQD5QQ06R4J6gLqbPE9HG_4jRY2E8ea"
+  },
+  {
+    "id": 203,
+    "subjectCode": "CS201",
+    "subjectName": "Design analysis and algorithm",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1PQLfMqnHhdNuipe1hcMr-9xuwn5qzBCU"
+  },
+  {
+    "id": 204,
+    "subjectCode": "HS 101",
+    "subjectName": "Professional Communication ",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1PemmsI75AZm6BMp_DltRgSbR1YkGUbrr"
+  },
+  {
+    "id": 205,
+    "subjectCode": "ME103",
+    "subjectName": "Engineering Materials",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1ed-bzPltZ59H7drzLWmLnYQSPEBwSu_l"
+  },
+  {
+    "id": 206,
+    "subjectCode": "CS203",
+    "subjectName": "Object Oriented Programming",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1M-5h0aWA8ysqChiZd9auQvQ7-SCq7mzX"
+  },
+  {
+    "id": 207,
+    "subjectCode": "MA101",
+    "subjectName": "Mathematics",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1diELI2-U2w2GUy7n_fCeTcoz1z8H1ctm"
+  },
+  {
+    "id": 208,
+    "subjectCode": "ME201",
+    "subjectName": "Solid Mechanics",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1CCQcq4UOojsdOI3AbCZ_8zD09pDGHKHM"
+  },
+  {
+    "id": 209,
+    "subjectCode": "EC107",
+    "subjectName": "Emerging Materials",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1W3E-eDS0hGPKqOwd4LEcwrXp2COH8FMc"
+  },
+  {
+    "id": 210,
+    "subjectCode": "ME207",
+    "subjectName": "Fluid Mechanics",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1uqtijE5aAJ9IJIVlM6nmOwyWm-kCY4wb"
+  },
+  {
+    "id": 211,
+    "subjectCode": "CS101",
+    "subjectName": "Computer Programming ",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1tEl1GaaBC5My2neZ5wDMSGOx96ksqb8P"
+  },
+  {
+    "id": 212,
+    "subjectCode": "MA101",
+    "subjectName": "Mathematics -1",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1Kc-P0LFgoDVrPmqcrhC5SlLwvQZefyYk"
+  },
+  {
+    "id": 213,
+    "subjectCode": "ME202",
+    "subjectName": "Thermodynamics",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1R7zhKTSdkW2W8fmcMUr8AVRH9X_fbsZZ"
+  },
+  {
+    "id": 214,
+    "subjectCode": "EC105",
+    "subjectName": "Basic electrical and electronics engineering ",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1npYTFOa2DfrmFU_69Xypcdf3ZYOlhDAh"
+  },
+  {
+    "id": 215,
+    "subjectCode": "MA203",
+    "subjectName": "Provability,Statistics and Random Process",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1jOHuvJOD-uA-CG9vKHtJq6Gi_dD9x_U_"
+  },
+  {
+    "id": 216,
+    "subjectCode": "MA 107",
+    "subjectName": "Linear Algebra",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "MNC",
+    "fileUrl": "https://drive.google.com/open?id=11inhE2VK356uBbrNR8WiiFlZFjxdjgpM"
+  },
+  {
+    "id": 217,
+    "subjectCode": "MA 108",
+    "subjectName": "Real Analysis and Multivariable",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "MNC",
+    "fileUrl": "https://drive.google.com/open?id=1_T1cAMoVrey9nNawNeqGmrGvEN23pS22"
+  },
+  {
+    "id": 218,
+    "subjectCode": "EC102",
+    "subjectName": "BASIC ELECTRICAL ENGINEERING",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1cCbybDoLiGqzUOYejLEpzeMGxZsOxqWS"
+  },
+  {
+    "id": 219,
+    "subjectCode": "MA 106",
+    "subjectName": "Abstract Algebra",
+    "type": "Mid Sem",
+    "semester": 1,
+    "year": 2025,
+    "branch": "MNC",
+    "fileUrl": "https://drive.google.com/open?id=1eRNz5MmQf3lTc86tpTkgHUJlDmbnQykQ"
+  },
+  {
+    "id": 220,
+    "subjectCode": "CS207",
+    "subjectName": "Computer Prganization and Architecture",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1RSMqKLMhI816f_k-hWePWTY2hrc1i54M"
+  },
+  {
+    "id": 221,
+    "subjectCode": "EC201",
+    "subjectName": "Electromagnetic Theory",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=15-gzZ06rPZWUkw0HUz0QVVjE-ZQV5oO7"
+  },
+  {
+    "id": 222,
+    "subjectCode": "CS207",
+    "subjectName": "Conputer Organisation and Architecture",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1dzxejbNXiE-47tWkdh-LluZd7j8uYJ95"
+  },
+  {
+    "id": 223,
+    "subjectCode": "ECE207",
+    "subjectName": "Analog Communication",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1hoIgodeNGg_Z4ULOZM8zfN-e8otKNYsg"
+  },
+  {
+    "id": 224,
+    "subjectCode": "EC210",
+    "subjectName": "Analog Integrated curcuits",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1XTUmcz6h01RnVGR62ELQyiZ10DTrt0M-"
+  },
+  {
+    "id": 225,
     "subjectCode": "PH101",
     "subjectName": "Engineering Physics",
     "type": "Mid Sem",
@@ -1960,7 +2250,7 @@
     "fileUrl": "https://drive.google.com/open?id=1MpnCvRR8Wqp43wc7YyETRAWtV6SxjW5c"
   },
   {
-    "id": 197,
+    "id": 226,
     "subjectCode": "PH101",
     "subjectName": "Engineering Physics",
     "type": "Mid Sem",
@@ -1970,7 +2260,7 @@
     "fileUrl": "https://drive.google.com/open?id=1MpnCvRR8Wqp43wc7YyETRAWtV6SxjW5c"
   },
   {
-    "id": 198,
+    "id": 227,
     "subjectCode": "PH101",
     "subjectName": "Engineering Physics",
     "type": "Mid Sem",
@@ -1980,7 +2270,7 @@
     "fileUrl": "https://drive.google.com/open?id=1MpnCvRR8Wqp43wc7YyETRAWtV6SxjW5c"
   },
   {
-    "id": 199,
+    "id": 228,
     "subjectCode": "MA203",
     "subjectName": "Probability and stats",
     "type": "Mid Sem",
@@ -1990,7 +2280,7 @@
     "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
   },
   {
-    "id": 200,
+    "id": 229,
     "subjectCode": "MA203",
     "subjectName": "Probability and stats",
     "type": "Mid Sem",
@@ -2000,7 +2290,7 @@
     "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
   },
   {
-    "id": 201,
+    "id": 230,
     "subjectCode": "MA203",
     "subjectName": "Probability and stats",
     "type": "Mid Sem",
