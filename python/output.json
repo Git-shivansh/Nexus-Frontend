@@ -2341,6 +2341,46 @@
   },
   {
     "id": 235,
+    "subjectCode": "MA203",
+    "subjectName": "Provability,Statistics and Random Process",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1jOHuvJOD-uA-CG9vKHtJq6Gi_dD9x_U_"
+  },
+  {
+    "id": 236,
+    "subjectCode": "MA203",
+    "subjectName": "Provability,Statistics and Random Process",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "MAE",
+    "fileUrl": "https://drive.google.com/open?id=1jOHuvJOD-uA-CG9vKHtJq6Gi_dD9x_U_"
+  },
+  {
+    "id": 237,
+    "subjectCode": "MA203",
+    "subjectName": "Provability,Statistics and Random Process",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "ECE",
+    "fileUrl": "https://drive.google.com/open?id=1jOHuvJOD-uA-CG9vKHtJq6Gi_dD9x_U_"
+  },
+  {
+    "id": 238,
+    "subjectCode": "MA203",
+    "subjectName": "Provability,Statistics and Random Process",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "MNC",
+    "fileUrl": "https://drive.google.com/open?id=1jOHuvJOD-uA-CG9vKHtJq6Gi_dD9x_U_"
+  },
+  {
+    "id": 239,
     "subjectCode": "MA 107",
     "subjectName": "Linear Algebra",
     "type": "Mid Sem",
@@ -2350,7 +2390,7 @@
     "fileUrl": "https://drive.google.com/open?id=11inhE2VK356uBbrNR8WiiFlZFjxdjgpM"
   },
   {
-    "id": 236,
+    "id": 240,
     "subjectCode": "MA 108",
     "subjectName": "Real Analysis and Multivariable",
     "type": "Mid Sem",
@@ -2360,7 +2400,7 @@
     "fileUrl": "https://drive.google.com/open?id=1_T1cAMoVrey9nNawNeqGmrGvEN23pS22"
   },
   {
-    "id": 237,
+    "id": 241,
     "subjectCode": "EC102",
     "subjectName": "BASIC ELECTRICAL ENGINEERING",
     "type": "Mid Sem",
@@ -2370,7 +2410,7 @@
     "fileUrl": "https://drive.google.com/open?id=1cCbybDoLiGqzUOYejLEpzeMGxZsOxqWS"
   },
   {
-    "id": 238,
+    "id": 242,
     "subjectCode": "EC102",
     "subjectName": "BASIC ELECTRICAL ENGINEERING",
     "type": "Mid Sem",
@@ -2380,7 +2420,7 @@
     "fileUrl": "https://drive.google.com/open?id=1cCbybDoLiGqzUOYejLEpzeMGxZsOxqWS"
   },
   {
-    "id": 239,
+    "id": 243,
     "subjectCode": "MA 106",
     "subjectName": "Abstract Algebra",
     "type": "Mid Sem",
@@ -2390,7 +2430,7 @@
     "fileUrl": "https://drive.google.com/open?id=1eRNz5MmQf3lTc86tpTkgHUJlDmbnQykQ"
   },
   {
-    "id": 240,
+    "id": 244,
     "subjectCode": "CS207",
     "subjectName": "Computer Prganization and Architecture",
     "type": "Mid Sem",
@@ -2400,7 +2440,7 @@
     "fileUrl": "https://drive.google.com/open?id=1RSMqKLMhI816f_k-hWePWTY2hrc1i54M"
   },
   {
-    "id": 241,
+    "id": 245,
     "subjectCode": "CS207",
     "subjectName": "Computer Prganization and Architecture",
     "type": "Mid Sem",
@@ -2410,7 +2450,7 @@
     "fileUrl": "https://drive.google.com/open?id=1RSMqKLMhI816f_k-hWePWTY2hrc1i54M"
   },
   {
-    "id": 242,
+    "id": 246,
     "subjectCode": "EC201",
     "subjectName": "Electromagnetic Theory",
     "type": "Mid Sem",
@@ -2420,7 +2460,7 @@
     "fileUrl": "https://drive.google.com/open?id=15-gzZ06rPZWUkw0HUz0QVVjE-ZQV5oO7"
   },
   {
-    "id": 243,
+    "id": 247,
     "subjectCode": "CS207",
     "subjectName": "Conputer Organisation and Architecture",
     "type": "Mid Sem",
@@ -2430,7 +2470,27 @@
     "fileUrl": "https://drive.google.com/open?id=1dzxejbNXiE-47tWkdh-LluZd7j8uYJ95"
   },
   {
-    "id": 244,
+    "id": 248,
+    "subjectCode": "CS207",
+    "subjectName": "Conputer Organisation and Architecture",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "CSE",
+    "fileUrl": "https://drive.google.com/open?id=1dzxejbNXiE-47tWkdh-LluZd7j8uYJ95"
+  },
+  {
+    "id": 249,
+    "subjectCode": "CS207",
+    "subjectName": "Conputer Organisation and Architecture",
+    "type": "Mid Sem",
+    "semester": 3,
+    "year": 2025,
+    "branch": "MNC",
+    "fileUrl": "https://drive.google.com/open?id=1dzxejbNXiE-47tWkdh-LluZd7j8uYJ95"
+  },
+  {
+    "id": 250,
     "subjectCode": "ECE207",
     "subjectName": "Analog Communication",
     "type": "Mid Sem",
@@ -2440,7 +2500,7 @@
     "fileUrl": "https://drive.google.com/open?id=1hoIgodeNGg_Z4ULOZM8zfN-e8otKNYsg"
   },
   {
-    "id": 245,
+    "id": 251,
     "subjectCode": "EC210",
     "subjectName": "Analog Integrated curcuits",
     "type": "Mid Sem",
@@ -2450,7 +2510,7 @@
     "fileUrl": "https://drive.google.com/open?id=1XTUmcz6h01RnVGR62ELQyiZ10DTrt0M-"
   },
   {
-    "id": 246,
+    "id": 252,
     "subjectCode": "PH101",
     "subjectName": "Engineering Physics",
     "type": "Mid Sem",
@@ -2460,7 +2520,7 @@
     "fileUrl": "https://drive.google.com/open?id=1MpnCvRR8Wqp43wc7YyETRAWtV6SxjW5c"
   },
   {
-    "id": 247,
+    "id": 253,
     "subjectCode": "PH101",
     "subjectName": "Engineering Physics",
     "type": "Mid Sem",
@@ -2470,7 +2530,7 @@
     "fileUrl": "https://drive.google.com/open?id=1MpnCvRR8Wqp43wc7YyETRAWtV6SxjW5c"
   },
   {
-    "id": 248,
+    "id": 254,
     "subjectCode": "PH101",
     "subjectName": "Engineering Physics",
     "type": "Mid Sem",
@@ -2480,7 +2540,7 @@
     "fileUrl": "https://drive.google.com/open?id=1MpnCvRR8Wqp43wc7YyETRAWtV6SxjW5c"
   },
   {
-    "id": 249,
+    "id": 255,
     "subjectCode": "MA203",
     "subjectName": "Probability and stats",
     "type": "Mid Sem",
@@ -2490,7 +2550,7 @@
     "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
   },
   {
-    "id": 250,
+    "id": 256,
     "subjectCode": "MA203",
     "subjectName": "Probability and stats",
     "type": "Mid Sem",
@@ -2500,7 +2560,7 @@
     "fileUrl": "https://drive.google.com/open?id=1nDJuZl7gAtS185roMBSrzPpDAaQlSWkT"
   },
   {
-    "id": 251,
+    "id": 257,
     "subjectCode": "MA203",
     "subjectName": "Probability and stats",
     "type": "Mid Sem",
