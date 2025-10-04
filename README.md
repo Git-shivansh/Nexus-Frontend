@@ -57,10 +57,10 @@ Then visit `http://localhost:5173`.
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
-![Home Page](./screenshots/home.png)
+![Home Page](./public/screenshots/hompage.png)
 
 ### 📚 Exam Vault
-![Exam Vault](./screenshots/examvault.png)
+![Exam Vault](./public/screenshots/examvault.png)
 
 > Place your screenshots inside a `screenshots/` folder in the repo.
 
