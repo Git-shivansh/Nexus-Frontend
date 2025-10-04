@@ -62,7 +62,6 @@ Then visit `http://localhost:5173`.
 ### 📚 Exam Vault
 ![Exam Vault](./public/screenshots/examvault.png)
 
-> Place your screenshots inside a `screenshots/` folder in the repo.
 
 ---
 
